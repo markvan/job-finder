@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../python_job_parser/src/conversions/read_url.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="180">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -104,12 +104,13 @@
         <option value="$PROJECT_DIR$/tests/simple.py" />
         <option value="$PROJECT_DIR$/tests/test_convert.py" />
         <option value="$PROJECT_DIR$/src/conversions/read_url.py" />
+        <option value="$PROJECT_DIR$/../python_job_parser/src/conversions/read_url.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="204" />
-    <option name="y" value="23" />
+    <option name="x" value="223" />
+    <option name="y" value="38" />
     <option name="width" value="1236" />
     <option name="height" value="823" />
   </component>
@@ -270,12 +271,12 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/conversions" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python_job_parser/src/conversions" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/conversions/read_url.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../python_job_parser/src/conversions/read_url.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -542,14 +543,15 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="204" y="23" width="1236" height="823" extended-state="0" />
+    <frame x="223" y="38" width="1236" height="823" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2839196" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49892473" visible="true" weight="0.2839196" />
       <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="2" sideWeight="0.50107527" side_tool="true" visible="true" weight="0.2839196" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49413735" visible="true" weight="0.33378932" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49329984" visible="true" weight="0.34322035" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39835164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -557,7 +559,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50586265" side_tool="true" visible="true" weight="0.33378932" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50670016" side_tool="true" weight="0.33242133" />
       <window_info anchor="right" id="R Graphics" />
       <window_info anchor="right" id="R Packages" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -635,8 +637,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../python_job_parser/src/conversions/read_url.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="180">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
