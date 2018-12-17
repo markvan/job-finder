@@ -1,9 +1,9 @@
 # convert url to appropriate file name depending on page query
 def file_name_from_url(url):
     files = {
-        '1': '../../tests/fixtures/multi_page_1.html',
-        '2': '../../tests/fixtures/multi_page_2.html',
-        '3': '../../tests/fixtures/multi_page_3.html',
+        '1': '../../tests/test_fixtures/multi_page_1.html',
+        '2': '../../tests/test_fixtures/multi_page_2.html',
+        '3': '../../tests/test_fixtures/multi_page_3.html',
     }
     url_ending = url[-7:]
     if not (url_ending=='&page=2' or url_ending=='&page=3'):

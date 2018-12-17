@@ -26,9 +26,19 @@ class CWJobMatches:
             page = int(url[-1:])
             u = url[:-1]+str(page+1)
         else:
-            u = url+"&page=1"
+            u = url+"&page=2"
         return u
 
-
-    # def get_all_jobs(self, url):
-
+    def get_all_jobs(self, url):
+        last_count = -1
+        out = ""
+        u = url
+        while (last_count != 0):
+            print(u)
+            jobs = self.get_jobs(u)
+            out += jobs+'''
+'''
+            last_count = jobs.count('class="job new " id=')
+            print(str(last_count)+'\n')
+            u = self._get_next_url(u)
+        return out

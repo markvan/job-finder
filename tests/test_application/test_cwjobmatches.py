@@ -1,13 +1,13 @@
-from tests.fixtures.fixture_data_acccess import file_name_from_url
-from tests.fixtures.fixture_data_acccess import page_source_from_file_name
+from tests.test_fixtures.fixture_data_acccess import file_name_from_url
+from tests.test_fixtures.fixture_data_acccess import page_source_from_file_name
 from src.application.cwjobmatches import CWJobMatches
 
 
 # test that the right file names will be used to read from in responce to url page  query
 def test_file_names_from_url():
-    assert file_name_from_url('https://x.com/data') == '../../tests/fixtures/multi_page_1.html'
-    assert file_name_from_url('https://x.com/data&page=2') == '../../tests/fixtures/multi_page_2.html'
-    assert file_name_from_url('https://x.com/data&page=3') == '../../tests/fixtures/multi_page_3.html'
+    assert file_name_from_url('https://x.com/data') == '../../tests/test_fixtures/multi_page_1.html'
+    assert file_name_from_url('https://x.com/data&page=2') == '../../tests/test_fixtures/multi_page_2.html'
+    assert file_name_from_url('https://x.com/data&page=3') == '../../tests/test_fixtures/multi_page_3.html'
 
 
 def create_job_matcher():
@@ -43,12 +43,21 @@ def test_num_of_jobs_from_url():
     url = "https://www.cwjobs.co.uk/jobs/contract/innovation/in-london?postedwithin=1&page=3"
     assert _count_jobs(job_matcher.get_jobs(url)) == 0
 
+
 def test_next_url():
     job_matcher = create_job_matcher()
     u1 = 'https://x.com/something'
-    assert u1+'&page=1' == job_matcher._get_next_url(u1)
-    assert u1+'&page=2' == job_matcher._get_next_url(job_matcher._get_next_url(u1))
+    assert u1+'&page=2' == job_matcher._get_next_url(u1)
+    assert u1+'&page=3' == job_matcher._get_next_url(job_matcher._get_next_url(u1))
     u2 = 'https://x.com/something&page=200'
     assert 'https://x.com/something&page=201' == job_matcher._get_next_url(u2)
+
+
+# could do with better test, only relying on counts
+def test_all_jobs():
+    job_matcher = create_job_matcher()
+    url = "https://www.cwjobs.co.uk/jobs/contract/innovation/in-london?postedwithin=1"
+    # the three pages have 17, 4 and 0 jobs on them
+    assert _count_jobs(job_matcher.get_all_jobs(url)) == 17+4+0
 
 
