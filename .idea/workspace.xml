@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e71d542-fb88-45ee-a7a7-dc523a114162" name="Default" comment="mocking sucessfully in test page parser see punctuation chars at the beginning of the output">
-      <change afterPath="$PROJECT_DIR$/tests/fixture_data/multi_page_3.html" afterDir="false" />
+    <list default="true" id="3e71d542-fb88-45ee-a7a7-dc523a114162" name="Default" comment="I believe that I've got mocking going to replace http requests, now to build something that returns all jobs across related pages">
+      <change afterPath="$PROJECT_DIR$/tests/fixture_data/multi_page_1_jobs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conversions/cw_job_matches.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/conversions/cw_job_matches.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/fixture_data/multi_page_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fixture_data/multi_page_1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_page_parser/test_page_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_page_parser/test_page_parser.py" afterDir="false" />
     </list>
     <ignored path="untitled.iws" />
@@ -22,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/conversions/cw_job_matches.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="345">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -35,31 +37,60 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/fixture_data/multi_page_3.html">
+        <entry file="file://$PROJECT_DIR$/tests/fixture_data/multi_page_1_jobs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20484">
-              <caret line="1366" lean-forward="true" selection-start-line="1366" selection-end-line="1366" />
+            <state>
+              <caret column="25" lean-forward="true" selection-start-column="5" selection-end-column="25" />
               <folding>
-                <element signature="e#5185#5191#1" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#52319#52325#1" expanded="true" />
-                <element signature="e#52661#52667#0" expanded="true" />
-                <element signature="e#52744#52750#0" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#1279#1301#0" expanded="true" />
+                <element signature="e#1466#2438#0" />
+                <element signature="e#2521#2780#0" />
+                <element signature="e#4403#4766#0" />
+                <element signature="e#4808#9304#0" />
+                <element signature="e#5297#5319#0" expanded="true" />
+                <element signature="e#9304#13121#0" />
+                <element signature="e#9762#9784#0" expanded="true" />
+                <element signature="e#13121#17353#0" />
+                <element signature="e#13617#13639#0" expanded="true" />
+                <element signature="e#17353#21428#0" />
+                <element signature="e#17837#17859#0" expanded="true" />
+                <element signature="e#20085#20090#0" expanded="true" />
+                <element signature="e#21428#25594#0" />
+                <element signature="e#21940#21962#0" expanded="true" />
+                <element signature="e#25594#29602#0" />
+                <element signature="e#26084#26106#0" expanded="true" />
+                <element signature="e#29602#33581#0" />
+                <element signature="e#30071#30093#0" expanded="true" />
+                <element signature="e#33581#37712#0" />
+                <element signature="e#34124#34146#0" expanded="true" />
+                <element signature="e#37712#42012#0" />
+                <element signature="e#38312#38334#0" expanded="true" />
+                <element signature="e#42012#46135#0" />
+                <element signature="e#42555#42577#0" expanded="true" />
+                <element signature="e#46135#50231#0" />
+                <element signature="e#46628#46650#0" expanded="true" />
+                <element signature="e#50231#54412#0" />
+                <element signature="e#50753#50775#0" expanded="true" />
+                <element signature="e#54412#58475#0" />
+                <element signature="e#54869#54891#0" expanded="true" />
+                <element signature="e#58475#62561#0" />
+                <element signature="e#58977#58999#0" expanded="true" />
+                <element signature="e#62561#66542#0" />
+                <element signature="e#63077#63099#0" expanded="true" />
+                <element signature="e#66542#70615#0" />
+                <element signature="e#66966#66988#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/test_page_parser/test_page_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="88" selection-start-line="9" selection-start-column="88" selection-end-line="9" selection-end-column="88" />
+            <state relative-caret-position="615">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
               <folding>
-                <element signature="e#0#63#0" expanded="true" />
+                <element signature="e#0#69#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,8 +99,151 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/fixture_data/fixture_data_acccess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="330">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/fixture_data/multi_page_1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="966" column="79" lean-forward="true" selection-start-line="966" selection-start-column="79" selection-end-line="966" selection-end-column="79" />
+              <folding>
+                <element signature="e#5269#5275#1" expanded="true" />
+                <element signature="n#div#7;n#div#2;n#div#0;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#65569#65575#0" expanded="true" />
+                <element signature="e#65575#65583#0" expanded="true" />
+                <element signature="e#65583#65589#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#75066#75072#0" expanded="true" />
+                <element signature="e#75072#75080#0" expanded="true" />
+                <element signature="e#75080#75086#0" expanded="true" />
+                <element signature="e#75281#75287#0" expanded="true" />
+                <element signature="e#75287#75295#0" expanded="true" />
+                <element signature="e#75295#75301#0" expanded="true" />
+                <element signature="e#75496#75502#0" expanded="true" />
+                <element signature="e#75502#75510#0" expanded="true" />
+                <element signature="e#75510#75516#0" expanded="true" />
+                <element signature="e#75712#75718#0" expanded="true" />
+                <element signature="e#75718#75726#0" expanded="true" />
+                <element signature="e#75726#75732#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#85317#85323#0" expanded="true" />
+                <element signature="e#85323#85331#0" expanded="true" />
+                <element signature="e#85331#85337#0" expanded="true" />
+                <element signature="e#85528#85534#0" expanded="true" />
+                <element signature="e#85534#85542#0" expanded="true" />
+                <element signature="e#85542#85548#0" expanded="true" />
+                <element signature="e#85745#85751#0" expanded="true" />
+                <element signature="e#85751#85759#0" expanded="true" />
+                <element signature="e#85759#85765#0" expanded="true" />
+                <element signature="e#85963#85969#0" expanded="true" />
+                <element signature="e#85969#85977#0" expanded="true" />
+                <element signature="e#85977#85983#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#94966#94974#0" expanded="true" />
+                <element signature="e#94974#94980#0" expanded="true" />
+                <element signature="e#95086#95092#0" expanded="true" />
+                <element signature="e#95092#95100#0" expanded="true" />
+                <element signature="e#95100#95106#0" expanded="true" />
+                <element signature="e#95297#95303#0" expanded="true" />
+                <element signature="e#95303#95311#0" expanded="true" />
+                <element signature="e#95311#95317#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#105052#105058#0" expanded="true" />
+                <element signature="e#105058#105066#0" expanded="true" />
+                <element signature="e#105066#105072#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#6;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#114641#114647#0" expanded="true" />
+                <element signature="e#114647#114655#0" expanded="true" />
+                <element signature="e#114655#114661#0" expanded="true" />
+                <element signature="n#style#0;n#div#7;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#8;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#124515#124523#0" expanded="true" />
+                <element signature="e#124523#124529#0" expanded="true" />
+                <element signature="e#124635#124641#0" expanded="true" />
+                <element signature="e#124641#124649#0" expanded="true" />
+                <element signature="e#124649#124655#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#9;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#134037#134045#0" expanded="true" />
+                <element signature="e#134045#134051#0" expanded="true" />
+                <element signature="e#134154#134160#0" expanded="true" />
+                <element signature="e#134160#134168#0" expanded="true" />
+                <element signature="e#134168#134174#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#10;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#143492#143500#0" expanded="true" />
+                <element signature="e#143500#143506#0" expanded="true" />
+                <element signature="e#143612#143618#0" expanded="true" />
+                <element signature="e#143618#143626#0" expanded="true" />
+                <element signature="e#143626#143632#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#11;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#153200#153206#0" expanded="true" />
+                <element signature="e#153206#153214#0" expanded="true" />
+                <element signature="e#153214#153220#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#12;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#163036#163042#0" expanded="true" />
+                <element signature="e#163042#163050#0" expanded="true" />
+                <element signature="e#163050#163056#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#13;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#172992#172998#0" expanded="true" />
+                <element signature="e#172998#173006#0" expanded="true" />
+                <element signature="e#173006#173012#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#14;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#182420#182428#0" expanded="true" />
+                <element signature="e#182428#182434#0" expanded="true" />
+                <element signature="e#182540#182546#0" expanded="true" />
+                <element signature="e#182546#182554#0" expanded="true" />
+                <element signature="e#182554#182560#0" expanded="true" />
+                <element signature="e#182749#182755#0" expanded="true" />
+                <element signature="e#182755#182763#0" expanded="true" />
+                <element signature="e#182763#182769#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#15;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#192360#192366#0" expanded="true" />
+                <element signature="e#192366#192374#0" expanded="true" />
+                <element signature="e#192374#192380#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#16;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#202170#202176#0" expanded="true" />
+                <element signature="e#202176#202184#0" expanded="true" />
+                <element signature="e#202184#202190#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#17;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#211794#211802#0" expanded="true" />
+                <element signature="e#211802#211808#0" expanded="true" />
+                <element signature="e#211913#211919#0" expanded="true" />
+                <element signature="e#211919#211927#0" expanded="true" />
+                <element signature="e#211927#211933#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#18;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#221282#221290#0" expanded="true" />
+                <element signature="e#221290#221296#0" expanded="true" />
+                <element signature="e#221399#221405#0" expanded="true" />
+                <element signature="e#221405#221413#0" expanded="true" />
+                <element signature="e#221413#221419#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#19;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#230764#230772#0" expanded="true" />
+                <element signature="e#230772#230778#0" expanded="true" />
+                <element signature="e#230884#230890#0" expanded="true" />
+                <element signature="e#230890#230898#0" expanded="true" />
+                <element signature="e#230898#230904#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#20;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#240463#240469#0" expanded="true" />
+                <element signature="e#240469#240477#0" expanded="true" />
+                <element signature="e#240477#240483#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#21;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#249818#249826#0" expanded="true" />
+                <element signature="e#249826#249832#0" expanded="true" />
+                <element signature="e#249939#249945#0" expanded="true" />
+                <element signature="e#249945#249953#0" expanded="true" />
+                <element signature="e#249953#249959#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#264311#264317#1" expanded="true" />
+                <element signature="e#264649#264655#0" expanded="true" />
+                <element signature="e#264732#264738#0" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,6 +266,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>hybris</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -119,11 +298,15 @@
         <option value="$PROJECT_DIR$/tests/test_convert.py" />
         <option value="$PROJECT_DIR$/src/conversions/read_url.py" />
         <option value="$PROJECT_DIR$/src/conversions/read_url.py" />
-        <option value="$PROJECT_DIR$/src/conversions/cw_job_matches.py" />
         <option value="$PROJECT_DIR$/tests/fixture_data/single_page.html" />
-        <option value="$PROJECT_DIR$/tests/fixture_data/fixture_data_acccess.py" />
-        <option value="$PROJECT_DIR$/tests/test_page_parser/test_page_parser.py" />
+        <option value="$PROJECT_DIR$/tests/test_page_parser/test_generator.py" />
         <option value="$PROJECT_DIR$/tests/fixture_data/multi_page_3.html" />
+        <option value="$PROJECT_DIR$/tests/fixture_data/multi_page_2.html" />
+        <option value="$PROJECT_DIR$/tests/fixture_data/fixture_data_acccess.py" />
+        <option value="$PROJECT_DIR$/tests/fixture_data/multi_page_1.html" />
+        <option value="$PROJECT_DIR$/src/conversions/cw_job_matches.py" />
+        <option value="$PROJECT_DIR$/tests/fixture_data/multi_page_1_jobs.html" />
+        <option value="$PROJECT_DIR$/tests/test_page_parser/test_page_parser.py" />
       </list>
     </option>
   </component>
@@ -167,6 +350,12 @@
               <item name="python_job_parser" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_job_parser" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="fixture_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_job_parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_job_parser" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="test_page_parser" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -203,7 +392,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_page_parser.test_parse">
+  <component name="RunManager" selected="Python tests.pytest for test_page_parser.test_jobs_from_url">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -253,48 +442,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="py.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="cw_job_matches" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python_job_parser" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/conversions" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/conversions/cw_job_matches.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="fixture_data_acccess" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python_job_parser" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/fixture_data" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/fixture_data/fixture_data_acccess.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -402,43 +549,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="py.test in test_convert.py" type="tests" factoryName="py.test" temporary="true">
-      <module name="python_job_parser" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="$PROJECT_DIR$/tests/test_convert.py" />
-      <option name="keywords" value="" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
-      <module name="python_job_parser" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_legacyInformationCopiedToNew" value="true" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_convert.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_page_parser.test_parse" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_page_parser.test_count_jobs" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_job_parser" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -449,7 +560,52 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_page_parser.test_parse&quot;" />
+      <option name="_new_target" value="&quot;test_page_parser.test_count_jobs&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_page_parser.test_file_content_from_url" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python_job_parser" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/test_page_parser" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_page_parser.test_file_content_from_url&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_page_parser.test_file_names_from_url" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python_job_parser" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/test_page_parser" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_page_parser.test_file_names_from_url&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_page_parser.test_jobs_from_url" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python_job_parser" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/test_page_parser" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_page_parser.test_jobs_from_url&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -473,20 +629,20 @@
       <item itemvalue="Python.py.py" />
       <item itemvalue="Python.partB" />
       <item itemvalue="Python.partC" />
-      <item itemvalue="Python.cw_job_matches" />
-      <item itemvalue="Python.fixture_data_acccess" />
       <item itemvalue="Python tests.py.test in simple.py" />
-      <item itemvalue="Python tests.py.test in test_convert.py" />
+      <item itemvalue="Python tests.pytest for test_page_parser.test_file_names_from_url" />
+      <item itemvalue="Python tests.pytest for test_page_parser.test_file_content_from_url" />
       <item itemvalue="Python tests.pytest in test_page_parser.py" />
-      <item itemvalue="Python tests.pytest for test_page_parser.test_parse" />
+      <item itemvalue="Python tests.pytest for test_page_parser.test_count_jobs" />
+      <item itemvalue="Python tests.pytest for test_page_parser.test_jobs_from_url" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_page_parser.test_parse" />
+        <item itemvalue="Python tests.pytest for test_page_parser.test_jobs_from_url" />
+        <item itemvalue="Python tests.pytest for test_page_parser.test_count_jobs" />
         <item itemvalue="Python tests.pytest in test_page_parser.py" />
-        <item itemvalue="Python.fixture_data_acccess" />
-        <item itemvalue="Python.cw_job_matches" />
-        <item itemvalue="Python tests.py.test in test_convert.py" />
+        <item itemvalue="Python tests.pytest for test_page_parser.test_file_content_from_url" />
+        <item itemvalue="Python tests.pytest for test_page_parser.test_file_names_from_url" />
       </list>
     </recent_temporary>
   </component>
@@ -515,51 +671,65 @@
       <option name="project" value="LOCAL" />
       <updated>1544998197211</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="more on monkeypatching /mocking">
+      <created>1545002440019</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1545002440019</updated>
+    </task>
+    <task id="LOCAL-00004" summary="I believe that I've got mocking going to replace http requests, now to build something that returns all jobs across related pages">
+      <created>1545079805343</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1545079805343</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_page_parser_test_parse - 2018.12.16 at 21h 58m 04s.xml">
-      <configuration name="pytest for test_page_parser.test_parse" configurationId="tests" />
+    <history-entry file="pytest_for_test_page_parser_test_count_jobs - 2018.12.17 at 21h 04m 37s.xml">
+      <configuration name="pytest for test_page_parser.test_count_jobs" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_page_parser_test_parse - 2018.12.16 at 22h 06m 53s.xml">
-      <configuration name="pytest for test_page_parser.test_parse" configurationId="tests" />
+    <history-entry file="pytest_for_test_page_parser_test_count_jobs - 2018.12.17 at 21h 05m 31s.xml">
+      <configuration name="pytest for test_page_parser.test_count_jobs" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_page_parser_test_parse - 2018.12.16 at 22h 15m 20s.xml">
-      <configuration name="pytest for test_page_parser.test_parse" configurationId="tests" />
+    <history-entry file="pytest_for_test_page_parser_test_count_jobs - 2018.12.17 at 21h 07m 05s.xml">
+      <configuration name="pytest for test_page_parser.test_count_jobs" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_page_parser_test_parse - 2018.12.16 at 22h 16m 04s.xml">
-      <configuration name="pytest for test_page_parser.test_parse" configurationId="tests" />
+    <history-entry file="pytest_for_test_page_parser_test_count_jobs - 2018.12.17 at 21h 09m 37s.xml">
+      <configuration name="pytest for test_page_parser.test_count_jobs" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_page_parser_test_parse - 2018.12.16 at 22h 16m 57s.xml">
-      <configuration name="pytest for test_page_parser.test_parse" configurationId="tests" />
+    <history-entry file="pytest_for_test_page_parser_test_count_jobs - 2018.12.17 at 21h 09m 57s.xml">
+      <configuration name="pytest for test_page_parser.test_count_jobs" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_page_parser_test_parse - 2018.12.16 at 22h 17m 56s.xml">
-      <configuration name="pytest for test_page_parser.test_parse" configurationId="tests" />
+    <history-entry file="pytest_for_test_page_parser_test_count_jobs - 2018.12.17 at 21h 10m 25s.xml">
+      <configuration name="pytest for test_page_parser.test_count_jobs" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_page_parser_test_parse - 2018.12.16 at 22h 18m 48s.xml">
-      <configuration name="pytest for test_page_parser.test_parse" configurationId="tests" />
+    <history-entry file="pytest_for_test_page_parser_test_count_jobs - 2018.12.17 at 21h 11m 39s.xml">
+      <configuration name="pytest for test_page_parser.test_count_jobs" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_page_parser_test_parse - 2018.12.16 at 22h 19m 18s.xml">
-      <configuration name="pytest for test_page_parser.test_parse" configurationId="tests" />
+    <history-entry file="pytest_for_test_page_parser_test_count_jobs - 2018.12.17 at 21h 22m 55s.xml">
+      <configuration name="pytest for test_page_parser.test_count_jobs" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_page_parser_test_parse - 2018.12.16 at 22h 20m 40s.xml">
-      <configuration name="pytest for test_page_parser.test_parse" configurationId="tests" />
+    <history-entry file="pytest_for_test_page_parser_test_jobs_from_url - 2018.12.17 at 21h 25m 25s.xml">
+      <configuration name="pytest for test_page_parser.test_jobs_from_url" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_page_parser_test_parse - 2018.12.16 at 22h 22m 01s.xml">
-      <configuration name="pytest for test_page_parser.test_parse" configurationId="tests" />
+    <history-entry file="pytest_for_test_page_parser_test_jobs_from_url - 2018.12.17 at 21h 26m 26s.xml">
+      <configuration name="pytest for test_page_parser.test_jobs_from_url" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="90" y="23" width="1236" height="823" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49894738" visible="true" weight="0.28810722" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49894738" visible="true" weight="0.33668342" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5010526" side_tool="true" weight="0.2839196" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4924623" visible="true" weight="0.34322035" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32909605" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4924623" visible="true" weight="0.28672317" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3983051" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -579,7 +749,7 @@
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5010526" side_tool="true" weight="0.2839196" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32909605" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4924623" visible="true" weight="0.34322035" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3983051" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -607,7 +777,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created some raw hrm result pages for fixtures, starting to create page parser class" />
     <MESSAGE value="mocking sucessfully in test page parser see punctuation chars at the beginning of the output" />
-    <option name="LAST_COMMIT_MESSAGE" value="mocking sucessfully in test page parser see punctuation chars at the beginning of the output" />
+    <MESSAGE value="more on monkeypatching /mocking" />
+    <MESSAGE value="I believe that I've got mocking going to replace http requests, now to build something that returns all jobs across related pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="I believe that I've got mocking going to replace http requests, now to build something that returns all jobs across related pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -629,6 +801,26 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>url[-1:]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>url[:-1]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>url.endswith('2')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>get_file_from_url('https://x.com/data&amp;page=2')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>content_file.read()</expression-string>
         <language-id>Python</language-id>
@@ -660,57 +852,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/tests/fixture_data/multi_page_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53085">
-          <caret line="3539" selection-start-line="3539" selection-end-line="3539" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#6;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#7;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#8;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#9;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#10;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#11;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#12;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#13;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#14;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#15;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#16;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#17;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#18;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#19;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#20;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#21;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/fixture_data/multi_page_2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26730">
-          <caret line="1782" selection-start-line="1782" selection-end-line="1782" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -795,23 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_page_parser/test_page_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="88" selection-start-line="9" selection-start-column="88" selection-end-line="9" selection-end-column="88" />
-          <folding>
-            <element signature="e#0#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/fixture_data/fixture_data_acccess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_convert.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -819,29 +943,260 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/fixture_data/multi_page_3.html">
+    <entry file="file://$PROJECT_DIR$/tests/fixture_data/multi_page_2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20484">
-          <caret line="1366" lean-forward="true" selection-start-line="1366" selection-end-line="1366" />
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
           <folding>
-            <element signature="e#5185#5191#1" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#52319#52325#1" expanded="true" />
-            <element signature="e#52661#52667#0" expanded="true" />
-            <element signature="e#52744#52750#0" expanded="true" />
             <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/fixture_data/multi_page_3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" lean-forward="true" selection-end-line="1" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/_pytest/capture.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="413" selection-start-line="413" selection-end-line="413" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_page_parser/test_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/fixture_data/multi_page_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="966" column="79" lean-forward="true" selection-start-line="966" selection-start-column="79" selection-end-line="966" selection-end-column="79" />
+          <folding>
+            <element signature="e#5269#5275#1" expanded="true" />
+            <element signature="n#div#7;n#div#2;n#div#0;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#65569#65575#0" expanded="true" />
+            <element signature="e#65575#65583#0" expanded="true" />
+            <element signature="e#65583#65589#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#75066#75072#0" expanded="true" />
+            <element signature="e#75072#75080#0" expanded="true" />
+            <element signature="e#75080#75086#0" expanded="true" />
+            <element signature="e#75281#75287#0" expanded="true" />
+            <element signature="e#75287#75295#0" expanded="true" />
+            <element signature="e#75295#75301#0" expanded="true" />
+            <element signature="e#75496#75502#0" expanded="true" />
+            <element signature="e#75502#75510#0" expanded="true" />
+            <element signature="e#75510#75516#0" expanded="true" />
+            <element signature="e#75712#75718#0" expanded="true" />
+            <element signature="e#75718#75726#0" expanded="true" />
+            <element signature="e#75726#75732#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#85317#85323#0" expanded="true" />
+            <element signature="e#85323#85331#0" expanded="true" />
+            <element signature="e#85331#85337#0" expanded="true" />
+            <element signature="e#85528#85534#0" expanded="true" />
+            <element signature="e#85534#85542#0" expanded="true" />
+            <element signature="e#85542#85548#0" expanded="true" />
+            <element signature="e#85745#85751#0" expanded="true" />
+            <element signature="e#85751#85759#0" expanded="true" />
+            <element signature="e#85759#85765#0" expanded="true" />
+            <element signature="e#85963#85969#0" expanded="true" />
+            <element signature="e#85969#85977#0" expanded="true" />
+            <element signature="e#85977#85983#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#94966#94974#0" expanded="true" />
+            <element signature="e#94974#94980#0" expanded="true" />
+            <element signature="e#95086#95092#0" expanded="true" />
+            <element signature="e#95092#95100#0" expanded="true" />
+            <element signature="e#95100#95106#0" expanded="true" />
+            <element signature="e#95297#95303#0" expanded="true" />
+            <element signature="e#95303#95311#0" expanded="true" />
+            <element signature="e#95311#95317#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#105052#105058#0" expanded="true" />
+            <element signature="e#105058#105066#0" expanded="true" />
+            <element signature="e#105066#105072#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#6;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#114641#114647#0" expanded="true" />
+            <element signature="e#114647#114655#0" expanded="true" />
+            <element signature="e#114655#114661#0" expanded="true" />
+            <element signature="n#style#0;n#div#7;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#8;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#124515#124523#0" expanded="true" />
+            <element signature="e#124523#124529#0" expanded="true" />
+            <element signature="e#124635#124641#0" expanded="true" />
+            <element signature="e#124641#124649#0" expanded="true" />
+            <element signature="e#124649#124655#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#9;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#134037#134045#0" expanded="true" />
+            <element signature="e#134045#134051#0" expanded="true" />
+            <element signature="e#134154#134160#0" expanded="true" />
+            <element signature="e#134160#134168#0" expanded="true" />
+            <element signature="e#134168#134174#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#10;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#143492#143500#0" expanded="true" />
+            <element signature="e#143500#143506#0" expanded="true" />
+            <element signature="e#143612#143618#0" expanded="true" />
+            <element signature="e#143618#143626#0" expanded="true" />
+            <element signature="e#143626#143632#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#11;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#153200#153206#0" expanded="true" />
+            <element signature="e#153206#153214#0" expanded="true" />
+            <element signature="e#153214#153220#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#12;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#163036#163042#0" expanded="true" />
+            <element signature="e#163042#163050#0" expanded="true" />
+            <element signature="e#163050#163056#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#13;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#172992#172998#0" expanded="true" />
+            <element signature="e#172998#173006#0" expanded="true" />
+            <element signature="e#173006#173012#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#14;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#182420#182428#0" expanded="true" />
+            <element signature="e#182428#182434#0" expanded="true" />
+            <element signature="e#182540#182546#0" expanded="true" />
+            <element signature="e#182546#182554#0" expanded="true" />
+            <element signature="e#182554#182560#0" expanded="true" />
+            <element signature="e#182749#182755#0" expanded="true" />
+            <element signature="e#182755#182763#0" expanded="true" />
+            <element signature="e#182763#182769#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#15;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#192360#192366#0" expanded="true" />
+            <element signature="e#192366#192374#0" expanded="true" />
+            <element signature="e#192374#192380#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#16;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#202170#202176#0" expanded="true" />
+            <element signature="e#202176#202184#0" expanded="true" />
+            <element signature="e#202184#202190#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#17;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#211794#211802#0" expanded="true" />
+            <element signature="e#211802#211808#0" expanded="true" />
+            <element signature="e#211913#211919#0" expanded="true" />
+            <element signature="e#211919#211927#0" expanded="true" />
+            <element signature="e#211927#211933#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#18;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#221282#221290#0" expanded="true" />
+            <element signature="e#221290#221296#0" expanded="true" />
+            <element signature="e#221399#221405#0" expanded="true" />
+            <element signature="e#221405#221413#0" expanded="true" />
+            <element signature="e#221413#221419#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#19;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#230764#230772#0" expanded="true" />
+            <element signature="e#230772#230778#0" expanded="true" />
+            <element signature="e#230884#230890#0" expanded="true" />
+            <element signature="e#230890#230898#0" expanded="true" />
+            <element signature="e#230898#230904#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#20;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#240463#240469#0" expanded="true" />
+            <element signature="e#240469#240477#0" expanded="true" />
+            <element signature="e#240477#240483#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#21;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#249818#249826#0" expanded="true" />
+            <element signature="e#249826#249832#0" expanded="true" />
+            <element signature="e#249939#249945#0" expanded="true" />
+            <element signature="e#249945#249953#0" expanded="true" />
+            <element signature="e#249953#249959#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#264311#264317#1" expanded="true" />
+            <element signature="e#264649#264655#0" expanded="true" />
+            <element signature="e#264732#264738#0" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/fixture_data/fixture_data_acccess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/conversions/cw_job_matches.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/fixture_data/multi_page_1_jobs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="5" selection-end-column="25" />
+          <folding>
+            <element signature="e#1279#1301#0" expanded="true" />
+            <element signature="e#1466#2438#0" />
+            <element signature="e#2521#2780#0" />
+            <element signature="e#4403#4766#0" />
+            <element signature="e#4808#9304#0" />
+            <element signature="e#5297#5319#0" expanded="true" />
+            <element signature="e#9304#13121#0" />
+            <element signature="e#9762#9784#0" expanded="true" />
+            <element signature="e#13121#17353#0" />
+            <element signature="e#13617#13639#0" expanded="true" />
+            <element signature="e#17353#21428#0" />
+            <element signature="e#17837#17859#0" expanded="true" />
+            <element signature="e#20085#20090#0" expanded="true" />
+            <element signature="e#21428#25594#0" />
+            <element signature="e#21940#21962#0" expanded="true" />
+            <element signature="e#25594#29602#0" />
+            <element signature="e#26084#26106#0" expanded="true" />
+            <element signature="e#29602#33581#0" />
+            <element signature="e#30071#30093#0" expanded="true" />
+            <element signature="e#33581#37712#0" />
+            <element signature="e#34124#34146#0" expanded="true" />
+            <element signature="e#37712#42012#0" />
+            <element signature="e#38312#38334#0" expanded="true" />
+            <element signature="e#42012#46135#0" />
+            <element signature="e#42555#42577#0" expanded="true" />
+            <element signature="e#46135#50231#0" />
+            <element signature="e#46628#46650#0" expanded="true" />
+            <element signature="e#50231#54412#0" />
+            <element signature="e#50753#50775#0" expanded="true" />
+            <element signature="e#54412#58475#0" />
+            <element signature="e#54869#54891#0" expanded="true" />
+            <element signature="e#58475#62561#0" />
+            <element signature="e#58977#58999#0" expanded="true" />
+            <element signature="e#62561#66542#0" />
+            <element signature="e#63077#63099#0" expanded="true" />
+            <element signature="e#66542#70615#0" />
+            <element signature="e#66966#66988#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_page_parser/test_page_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
           </folding>
         </state>
       </provider>

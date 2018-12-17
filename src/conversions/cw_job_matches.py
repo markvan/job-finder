@@ -14,7 +14,10 @@ class CWJobMatches:
 
         soup = BeautifulSoup(self.get_html(url), 'html.parser')
         out = ""
+        i = 0
         for link in soup.find('div', class_="job-results").find_all('div', class_="job new "):
-            out += str(link.find('a'))
-            out += str(link.find('p', class_="job-intro"))
+            i += 1
+            # out += "-----------------" + str(i) + "------"
+            out += str(link)
+            # out += "-----------------" + str(i) + "------"
         return out
