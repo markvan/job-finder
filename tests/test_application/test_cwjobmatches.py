@@ -32,7 +32,7 @@ def test_file_content_from_url():
 
 
 def _count_jobs(html_fragment):
-    return html_fragment.count('class="job new " id=')
+    return str(html_fragment).count('class="job new " id=')
 
 
 # could do with better test, but have hand inspected what comes back
