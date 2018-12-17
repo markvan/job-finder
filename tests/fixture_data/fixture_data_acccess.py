@@ -16,7 +16,6 @@ def file_name_from_url(url):
 # get the html from a file depending on page query
 # this is used in monkeypatching to mock http resquest during testing
 def page_source_from_file_name(would_be_self, url):
-    print("**************------------------*****************"+url)
     with open(file_name_from_url(url), 'r') as content_file:
         content = content_file.read()
     return content

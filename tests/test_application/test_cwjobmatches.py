@@ -1,6 +1,6 @@
 from tests.fixture_data.fixture_data_acccess import file_name_from_url
 from tests.fixture_data.fixture_data_acccess import page_source_from_file_name
-from src.conversions.cw_job_matches import CWJobMatches
+from src.application.cwjobmatches import CWJobMatches
 
 
 # test that the right file names will be used to read from in responce to url page  query
@@ -30,12 +30,13 @@ def test_file_content_from_url():
     assert '<!–– multi page 3 ––>' in job_matcher.get_html(url)
 
 
-def count_jobs(html_fragment):
+def _count_jobs(html_fragment):
     return html_fragment.count('class="job new " id=')
 
-def test_jobs_from_url():
+# could do with better test, but have hand inspected what comes back
+def test_num_of_jobs_from_url():
     job_matcher = create_job_watcher()
     url = "https://www.cwjobs.co.uk/jobs/contract/innovation/in-london?postedwithin=1"
-    assert count_jobs(job_matcher.get_jobs(url)) == 17
+    assert _count_jobs(job_matcher.get_jobs(url)) == 17
     url = "https://www.cwjobs.co.uk/jobs/contract/innovation/in-london?postedwithin=1&page=3"
-    assert count_jobs(job_matcher.get_jobs(url)) == 0
+    assert _count_jobs(job_matcher.get_jobs(url)) == 0
