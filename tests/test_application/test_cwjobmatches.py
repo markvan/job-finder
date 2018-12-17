@@ -42,3 +42,13 @@ def test_num_of_jobs_from_url():
     assert _count_jobs(job_matcher.get_jobs(url)) == 17
     url = "https://www.cwjobs.co.uk/jobs/contract/innovation/in-london?postedwithin=1&page=3"
     assert _count_jobs(job_matcher.get_jobs(url)) == 0
+
+def test_next_url():
+    job_matcher = create_job_matcher()
+    u1 = 'https://x.com/something'
+    assert u1+'&page=1' == job_matcher._get_next_url(u1)
+    assert u1+'&page=2' == job_matcher._get_next_url(job_matcher._get_next_url(u1))
+    u2 = 'https://x.com/something&page=200'
+    assert 'https://x.com/something&page=201' == job_matcher._get_next_url(u2)
+
+
