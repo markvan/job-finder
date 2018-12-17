@@ -12,9 +12,10 @@ class CWJobMatches:
     # returns 0 to many jobs from a page at the url
     def get_jobs(self, url):
         soup = BeautifulSoup(self.get_html(url), 'html.parser')
-        out = soup.find('div', class_="nevaneva")
-        i = 0
-        return soup.find('div', class_="job-results")
+        out = ""
+        for link in soup.find('div', class_="job-results").find_all('div', class_="job new "):
+            out += str(link)
+        return BeautifulSoup(out)
 
     def _get_next_url(self, url):
         if "&page=" in url:
@@ -29,11 +30,8 @@ class CWJobMatches:
         out = ""
         u = url
         while last_count != 0:
-            print(u)
             jobs = str(self.get_jobs(u))
-            out += jobs+'''
-'''
+            out += jobs
             last_count = jobs.count('class="job new " id=')
-            print(str(last_count)+'\n')
             u = self._get_next_url(u)
         return BeautifulSoup(out)
