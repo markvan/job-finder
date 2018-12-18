@@ -15,7 +15,7 @@ class CWJobMatches:
         out = ""
         for link in soup.find('div', class_="job-results").find_all('div', class_="job new "):
             out += str(link)
-        return BeautifulSoup(out)
+        return BeautifulSoup(out, 'html.parser')
 
     def _get_next_url(self, url):
         if "&page=" in url:
@@ -34,4 +34,4 @@ class CWJobMatches:
             out += jobs
             last_count = jobs.count('class="job new " id=')
             u = self._get_next_url(u)
-        return BeautifulSoup(out)
+        return BeautifulSoup(out, 'html.parser')

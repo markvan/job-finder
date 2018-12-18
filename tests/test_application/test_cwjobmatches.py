@@ -59,7 +59,6 @@ def test_all_jobs():
     url = "https://www.cwjobs.co.uk/jobs/contract/innovation/in-london?postedwithin=1"
     # the three pages have 17, 4 and 0 jobs on them
     assert _count_jobs(job_matcher.get_all_jobs(url)) == 17+4+0
-    print("=======================")
-    print(job_matcher.get_all_jobs(url))
+
 
 
