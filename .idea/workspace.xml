@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e71d542-fb88-45ee-a7a7-dc523a114162" name="Default" comment="noto sure its for the best but all results are BeutifulSoup tags, may need to tidy up still">
-      <change afterPath="$PROJECT_DIR$/tests/test_fixtures/all_jobs_out.html" afterDir="false" />
+    <list default="true" id="3e71d542-fb88-45ee-a7a7-dc523a114162" name="Default" comment="notably added parser: BeautifulSoup(out, 'html.parser')">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/cwjobmatches.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/cwjobmatches.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_application/test_cwjobmatches.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_application/test_cwjobmatches.py" afterDir="false" />
@@ -23,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/cwjobmatches.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="256">
+              <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -36,10 +35,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_application/test_generator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="37" selection-start-line="37" selection-end-line="39" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/test_application/test_cwjobmatches.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="41" column="48" lean-forward="true" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="e#0#71#0" expanded="true" />
               </folding>
@@ -48,93 +56,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_fixtures/all_jobs_out.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="2949" selection-start-line="2949" selection-end-line="2949" />
-              <folding>
-                <element signature="e#1245#5312#0" />
-                <element signature="e#1783#1805#0" expanded="true" />
-                <element signature="e#5313#9866#0" />
-                <element signature="e#5809#5831#0" expanded="true" />
-                <element signature="e#8451#8456#0" expanded="true" />
-                <element signature="e#9867#14363#0" />
-                <element signature="e#10356#10378#0" expanded="true" />
-                <element signature="e#14364#14600#0" />
-                <element signature="e#14601#18418#0" />
-                <element signature="e#15059#15081#0" expanded="true" />
-                <element signature="e#18419#22651#0" />
-                <element signature="e#18915#18937#0" expanded="true" />
-                <element signature="e#22652#26727#0" />
-                <element signature="e#23136#23158#0" expanded="true" />
-                <element signature="e#25384#25389#0" expanded="true" />
-                <element signature="e#26742#26787#0" expanded="true" />
-                <element signature="e#26728#26828#0" />
-                <element signature="e#26829#30995#0" />
-                <element signature="e#27341#27363#0" expanded="true" />
-                <element signature="e#30996#35004#0" />
-                <element signature="e#31486#31508#0" expanded="true" />
-                <element signature="e#35005#38984#0" />
-                <element signature="e#35474#35496#0" expanded="true" />
-                <element signature="e#38985#43116#0" />
-                <element signature="e#39528#39550#0" expanded="true" />
-                <element signature="e#43117#47472#0" />
-                <element signature="e#43624#43646#0" expanded="true" />
-                <element signature="e#47473#51773#0" />
-                <element signature="e#48073#48095#0" expanded="true" />
-                <element signature="e#51774#55897#0" />
-                <element signature="e#52317#52339#0" expanded="true" />
-                <element signature="e#55898#60081#0" />
-                <element signature="e#56410#56432#0" expanded="true" />
-                <element signature="e#60082#64178#0" />
-                <element signature="e#60575#60597#0" expanded="true" />
-                <element signature="e#64179#68360#0" />
-                <element signature="e#64701#64723#0" expanded="true" />
-                <element signature="e#68361#72424#0" />
-                <element signature="e#68818#68840#0" expanded="true" />
-                <element signature="e#72425#76511#0" />
-                <element signature="e#72927#72949#0" expanded="true" />
-                <element signature="e#76512#80493#0" />
-                <element signature="e#77028#77050#0" expanded="true" />
-                <element signature="e#80494#84567#0" />
-                <element signature="e#80918#80940#0" expanded="true" />
-                <element signature="e#84568#85108#0" />
-                <element signature="e#85109#85167#0" />
-                <element signature="e#85168#85247#0" />
-                <element signature="e#85248#85325#0" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#!!top" />
-                <element signature="e#85962#85984#0" expanded="true" />
-                <element signature="e#86165#86187#0" expanded="true" />
-                <element signature="e#86507#86529#0" expanded="true" />
-                <element signature="e#87027#90440#0" />
-                <element signature="e#87467#87489#0" expanded="true" />
-                <element signature="e#90441#93856#0" />
-                <element signature="e#90931#90953#0" expanded="true" />
-                <element signature="e#93857#97018#0" />
-                <element signature="e#94309#94331#0" expanded="true" />
-                <element signature="e#97019#97255#0" />
-                <element signature="e#97255#100859#0" />
-                <element signature="e#97783#97805#0" expanded="true" />
-                <element signature="e#100860#101374#0" />
-                <element signature="e#101375#101433#0" />
-                <element signature="e#101434#101513#0" />
-                <element signature="e#101514#101591#0" />
-                <element signature="e#102228#102250#0" expanded="true" />
-                <element signature="e#102382#102404#0" expanded="true" />
-                <element signature="e#102675#102697#0" expanded="true" />
-                <element signature="e#105235#105257#0" expanded="true" />
-                <element signature="e#105389#105411#0" expanded="true" />
-                <element signature="e#105682#105704#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_fixtures/fixture_data_acccess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            <state relative-caret-position="315">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -191,9 +116,9 @@
         <option value="$PROJECT_DIR$/tests/fixture_data/fixture_data_acccess.py" />
         <option value="$PROJECT_DIR$/tests/test_page_parser/test_page_parser.py" />
         <option value="$PROJECT_DIR$/tests/test_fixtures/fixture_data_acccess.py" />
-        <option value="$PROJECT_DIR$/tests/test_application/test_cwjobmatches.py" />
         <option value="$PROJECT_DIR$/tests/test_fixtures/all_jobs_out.html" />
         <option value="$PROJECT_DIR$/src/application/cwjobmatches.py" />
+        <option value="$PROJECT_DIR$/tests/test_application/test_cwjobmatches.py" />
       </list>
     </option>
   </component>
@@ -209,7 +134,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,6 +173,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,7 +204,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_cwjobmatches.py">
+  <component name="RunManager" selected="Python tests.pytest for test_cwjobmatches.test_loop">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -466,7 +391,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_cwjobmatches.test_next_url" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_cwjobmatches.test_loop" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_job_parser" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -477,7 +402,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_cwjobmatches.test_next_url&quot;" />
+      <option name="_new_target" value="&quot;test_cwjobmatches.test_loop&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -517,19 +442,19 @@
       <item itemvalue="Python.partB" />
       <item itemvalue="Python.partC" />
       <item itemvalue="Python tests.py.test in simple.py" />
-      <item itemvalue="Python tests.pytest for test_cwjobmatches.test_next_url" />
       <item itemvalue="Python tests.pytest for test_cwjobmatches.test_all_jobs" />
       <item itemvalue="Python tests.pytest for test_cwjobmatches.test_num_of_jobs_from_url" />
       <item itemvalue="Python tests.pytest for test_cwjobmatches.TestP.test_num_of_jobs_from_url" />
       <item itemvalue="Python tests.pytest in test_cwjobmatches.py" />
+      <item itemvalue="Python tests.pytest for test_cwjobmatches.test_loop" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_cwjobmatches.test_loop" />
         <item itemvalue="Python tests.pytest in test_cwjobmatches.py" />
         <item itemvalue="Python tests.pytest for test_cwjobmatches.test_all_jobs" />
         <item itemvalue="Python tests.pytest for test_cwjobmatches.TestP.test_num_of_jobs_from_url" />
         <item itemvalue="Python tests.pytest for test_cwjobmatches.test_num_of_jobs_from_url" />
-        <item itemvalue="Python tests.pytest for test_cwjobmatches.test_next_url" />
       </list>
     </recent_temporary>
   </component>
@@ -614,28 +539,24 @@
       <option name="project" value="LOCAL" />
       <updated>1545089335515</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="refine BeautifulSoup tags for results">
+      <created>1545090519080</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1545090519080</updated>
+    </task>
+    <task id="LOCAL-00012" summary="notably added parser: BeautifulSoup(out, 'html.parser')">
+      <created>1545091334320</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1545091334320</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_cwjobmatches_py - 2018.12.17 at 23h 19m 31s.xml">
-      <configuration name="pytest in test_cwjobmatches.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_cwjobmatches_py - 2018.12.17 at 23h 20m 52s.xml">
-      <configuration name="pytest in test_cwjobmatches.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_cwjobmatches_py - 2018.12.17 at 23h 22m 13s.xml">
-      <configuration name="pytest in test_cwjobmatches.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_cwjobmatches_py - 2018.12.17 at 23h 27m 11s.xml">
-      <configuration name="pytest in test_cwjobmatches.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_cwjobmatches_test_all_jobs - 2018.12.17 at 23h 29m 49s.xml">
-      <configuration name="pytest for test_cwjobmatches.test_all_jobs" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_cwjobmatches_test_all_jobs - 2018.12.17 at 23h 32m 14s.xml">
-      <configuration name="pytest for test_cwjobmatches.test_all_jobs" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_in_test_cwjobmatches_py - 2018.12.17 at 23h 42m 22s.xml">
       <configuration name="pytest in test_cwjobmatches.py" configurationId="tests" />
     </history-entry>
@@ -648,16 +569,34 @@
     <history-entry file="pytest_in_test_cwjobmatches_py - 2018.12.17 at 23h 45m 59s.xml">
       <configuration name="pytest in test_cwjobmatches.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_in_test_cwjobmatches_py - 2018.12.17 at 23h 56m 18s.xml">
+      <configuration name="pytest in test_cwjobmatches.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_cwjobmatches_py - 2018.12.18 at 00h 01m 23s.xml">
+      <configuration name="pytest in test_cwjobmatches.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_cwjobmatches_test_loop - 2018.12.18 at 00h 29m 28s.xml">
+      <configuration name="pytest for test_cwjobmatches.test_loop" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_cwjobmatches_test_loop - 2018.12.18 at 00h 30m 06s.xml">
+      <configuration name="pytest for test_cwjobmatches.test_loop" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_cwjobmatches_test_loop - 2018.12.18 at 00h 31m 32s.xml">
+      <configuration name="pytest for test_cwjobmatches.test_loop" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_cwjobmatches_test_loop - 2018.12.18 at 00h 31m 55s.xml">
+      <configuration name="pytest for test_cwjobmatches.test_loop" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="218" y="23" width="1236" height="823" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49894738" visible="true" weight="0.33668342" />
-      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49894738" visible="true" weight="0.34254608" />
+      <window_info id="Structure" order="1" weight="0.24958123" />
       <window_info id="Favorites" order="2" sideWeight="0.5010526" side_tool="true" weight="0.2839196" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32909605" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4924623" visible="true" weight="0.28672317" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4924623" weight="0.28672317" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3983051" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -692,7 +631,9 @@
     <MESSAGE value="extending CWJobMatches and tests therefore" />
     <MESSAGE value="sanity" />
     <MESSAGE value="noto sure its for the best but all results are BeutifulSoup tags, may need to tidy up still" />
-    <option name="LAST_COMMIT_MESSAGE" value="noto sure its for the best but all results are BeutifulSoup tags, may need to tidy up still" />
+    <MESSAGE value="refine BeautifulSoup tags for results" />
+    <MESSAGE value="notably added parser: BeautifulSoup(out, 'html.parser')" />
+    <option name="LAST_COMMIT_MESSAGE" value="notably added parser: BeautifulSoup(out, 'html.parser')" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -757,24 +698,12 @@
     <entry file="file://$PROJECT_DIR$/py.py" />
     <entry file="file://$PROJECT_DIR$/src/py.py" />
     <entry file="file://$PROJECT_DIR$/tests/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/src/junk_from_before/partB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/junk_from_before/partB.py" />
     <entry file="file://$PROJECT_DIR$/src/__init__.py" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/junk_from_before/partC.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/junk_from_before/partC.py" />
     <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/bs4/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -789,59 +718,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/fixtures/single_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
-          <folding>
-            <element signature="e#5092#5098#1" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#40279#40287#0" expanded="true" />
-            <element signature="e#40287#40293#0" expanded="true" />
-            <element signature="e#40397#40403#0" expanded="true" />
-            <element signature="e#40403#40411#0" expanded="true" />
-            <element signature="e#40411#40417#0" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#45491#45497#0" expanded="true" />
-            <element signature="e#45497#45505#0" expanded="true" />
-            <element signature="e#45505#45511#0" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#50289#50297#0" expanded="true" />
-            <element signature="e#50297#50303#0" expanded="true" />
-            <element signature="e#50409#50415#0" expanded="true" />
-            <element signature="e#50415#50423#0" expanded="true" />
-            <element signature="e#50423#50429#0" expanded="true" />
-            <element signature="e#50560#50566#0" expanded="true" />
-            <element signature="e#50566#50574#0" expanded="true" />
-            <element signature="e#50574#50580#0" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#55637#55645#0" expanded="true" />
-            <element signature="e#55645#55651#0" expanded="true" />
-            <element signature="e#55758#55764#0" expanded="true" />
-            <element signature="e#55764#55772#0" expanded="true" />
-            <element signature="e#55772#55778#0" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#60807#60813#0" expanded="true" />
-            <element signature="e#60813#60821#0" expanded="true" />
-            <element signature="e#60821#60827#0" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#70684#70690#1" expanded="true" />
-            <element signature="e#71022#71028#0" expanded="true" />
-            <element signature="e#71105#71111#0" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/junk_from_before/convert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/fixtures/single_page.html" />
+    <entry file="file://$PROJECT_DIR$/src/junk_from_before/convert.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/pytestrunner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -886,13 +764,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_convert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_convert.py" />
     <entry file="file://$PROJECT_DIR$/tests/test_fixtures/multi_page_1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -1041,117 +913,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_fixtures/fixture_data_acccess.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_fixtures/all_jobs_out.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        <state relative-caret-position="300">
+          <caret line="2311" column="28" selection-start-line="2311" selection-start-column="28" selection-end-line="2311" selection-end-column="28" />
+          <folding>
+            <element signature="e#751#4818#0" />
+            <element signature="e#1289#1311#0" expanded="true" />
+            <element signature="e#4818#9314#0" />
+            <element signature="e#5307#5329#0" expanded="true" />
+            <element signature="e#9314#13131#0" />
+            <element signature="e#9772#9794#0" expanded="true" />
+            <element signature="e#13131#17363#0" />
+            <element signature="e#13627#13649#0" expanded="true" />
+            <element signature="e#17363#21438#0" />
+            <element signature="e#17847#17869#0" expanded="true" />
+            <element signature="e#20095#20100#0" expanded="true" />
+            <element signature="e#21438#25604#0" />
+            <element signature="e#21950#21972#0" expanded="true" />
+            <element signature="e#25604#29612#0" />
+            <element signature="e#26094#26116#0" expanded="true" />
+            <element signature="e#29612#33591#0" />
+            <element signature="e#30081#30103#0" expanded="true" />
+            <element signature="e#33591#37722#0" />
+            <element signature="e#34134#34156#0" expanded="true" />
+            <element signature="e#37722#42022#0" />
+            <element signature="e#38322#38344#0" expanded="true" />
+            <element signature="e#42022#46145#0" />
+            <element signature="e#42565#42587#0" expanded="true" />
+            <element signature="e#46145#50241#0" />
+            <element signature="e#46638#46660#0" expanded="true" />
+            <element signature="e#50241#54422#0" />
+            <element signature="e#50763#50785#0" expanded="true" />
+            <element signature="e#54422#58485#0" />
+            <element signature="e#54879#54901#0" expanded="true" />
+            <element signature="e#58485#62571#0" />
+            <element signature="e#58987#59009#0" expanded="true" />
+            <element signature="e#62571#66552#0" />
+            <element signature="e#63087#63109#0" expanded="true" />
+            <element signature="e#66552#70625#0" />
+            <element signature="e#66976#66998#0" expanded="true" />
+            <element signature="e#70625#74038#0" />
+            <element signature="e#71065#71087#0" expanded="true" />
+            <element signature="e#74038#77453#0" />
+            <element signature="e#74528#74550#0" expanded="true" />
+            <element signature="e#77453#80614#0" />
+            <element signature="e#77905#77927#0" expanded="true" />
+            <element signature="e#80614#84218#0" />
+            <element signature="e#81142#81164#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_application/test_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        <state relative-caret-position="555">
+          <caret line="37" selection-start-line="37" selection-end-line="39" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_fixtures/all_jobs_out.html">
+    <entry file="file://$PROJECT_DIR$/tests/test_fixtures/fixture_data_acccess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="2949" selection-start-line="2949" selection-end-line="2949" />
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/cwjobmatches.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding>
-            <element signature="e#1245#5312#0" />
-            <element signature="e#1783#1805#0" expanded="true" />
-            <element signature="e#5313#9866#0" />
-            <element signature="e#5809#5831#0" expanded="true" />
-            <element signature="e#8451#8456#0" expanded="true" />
-            <element signature="e#9867#14363#0" />
-            <element signature="e#10356#10378#0" expanded="true" />
-            <element signature="e#14364#14600#0" />
-            <element signature="e#14601#18418#0" />
-            <element signature="e#15059#15081#0" expanded="true" />
-            <element signature="e#18419#22651#0" />
-            <element signature="e#18915#18937#0" expanded="true" />
-            <element signature="e#22652#26727#0" />
-            <element signature="e#23136#23158#0" expanded="true" />
-            <element signature="e#25384#25389#0" expanded="true" />
-            <element signature="e#26742#26787#0" expanded="true" />
-            <element signature="e#26728#26828#0" />
-            <element signature="e#26829#30995#0" />
-            <element signature="e#27341#27363#0" expanded="true" />
-            <element signature="e#30996#35004#0" />
-            <element signature="e#31486#31508#0" expanded="true" />
-            <element signature="e#35005#38984#0" />
-            <element signature="e#35474#35496#0" expanded="true" />
-            <element signature="e#38985#43116#0" />
-            <element signature="e#39528#39550#0" expanded="true" />
-            <element signature="e#43117#47472#0" />
-            <element signature="e#43624#43646#0" expanded="true" />
-            <element signature="e#47473#51773#0" />
-            <element signature="e#48073#48095#0" expanded="true" />
-            <element signature="e#51774#55897#0" />
-            <element signature="e#52317#52339#0" expanded="true" />
-            <element signature="e#55898#60081#0" />
-            <element signature="e#56410#56432#0" expanded="true" />
-            <element signature="e#60082#64178#0" />
-            <element signature="e#60575#60597#0" expanded="true" />
-            <element signature="e#64179#68360#0" />
-            <element signature="e#64701#64723#0" expanded="true" />
-            <element signature="e#68361#72424#0" />
-            <element signature="e#68818#68840#0" expanded="true" />
-            <element signature="e#72425#76511#0" />
-            <element signature="e#72927#72949#0" expanded="true" />
-            <element signature="e#76512#80493#0" />
-            <element signature="e#77028#77050#0" expanded="true" />
-            <element signature="e#80494#84567#0" />
-            <element signature="e#80918#80940#0" expanded="true" />
-            <element signature="e#84568#85108#0" />
-            <element signature="e#85109#85167#0" />
-            <element signature="e#85168#85247#0" />
-            <element signature="e#85248#85325#0" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#!!top" />
-            <element signature="e#85962#85984#0" expanded="true" />
-            <element signature="e#86165#86187#0" expanded="true" />
-            <element signature="e#86507#86529#0" expanded="true" />
-            <element signature="e#87027#90440#0" />
-            <element signature="e#87467#87489#0" expanded="true" />
-            <element signature="e#90441#93856#0" />
-            <element signature="e#90931#90953#0" expanded="true" />
-            <element signature="e#93857#97018#0" />
-            <element signature="e#94309#94331#0" expanded="true" />
-            <element signature="e#97019#97255#0" />
-            <element signature="e#97255#100859#0" />
-            <element signature="e#97783#97805#0" expanded="true" />
-            <element signature="e#100860#101374#0" />
-            <element signature="e#101375#101433#0" />
-            <element signature="e#101434#101513#0" />
-            <element signature="e#101514#101591#0" />
-            <element signature="e#102228#102250#0" expanded="true" />
-            <element signature="e#102382#102404#0" expanded="true" />
-            <element signature="e#102675#102697#0" expanded="true" />
-            <element signature="e#105235#105257#0" expanded="true" />
-            <element signature="e#105389#105411#0" expanded="true" />
-            <element signature="e#105682#105704#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_application/test_cwjobmatches.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="41" column="48" lean-forward="true" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#0#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/cwjobmatches.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
