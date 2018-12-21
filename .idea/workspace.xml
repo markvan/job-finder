@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e71d542-fb88-45ee-a7a7-dc523a114162" name="Default" comment="notably added parser: BeautifulSoup(out, 'html.parser')">
+    <list default="true" id="3e71d542-fb88-45ee-a7a7-dc523a114162" name="Default" comment="added todo notes">
+      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/jobTagSelection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_fixtures/job_from_job_iterator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/cwjobmatches.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/cwjobmatches.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_application/test_cwjobmatches.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_application/test_cwjobmatches.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_fixtures/fixture_data_acccess.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_fixtures/fixture_data_acccess.py" afterDir="false" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,31 +31,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/cwjobmatches.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_application/test_generator.py">
+        <entry file="file://$PROJECT_DIR$/src/application/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_application/test_cwjobmatches.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" selection-start-line="37" selection-end-line="39" selection-end-column="16" />
+            <state relative-caret-position="15">
+              <caret line="1" column="61" lean-forward="true" selection-start-line="1" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/test_application/test_cwjobmatches.py">
+        <entry file="file://$PROJECT_DIR$/hello.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="405">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
-                <element signature="e#0#71#0" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_fixtures/fixture_data_acccess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="180">
+              <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -77,6 +95,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>hybris</find>
+      <find>Software QA Developer</find>
+      <find>premium</find>
       <find>print</find>
     </findStrings>
   </component>
@@ -115,16 +135,23 @@
         <option value="$PROJECT_DIR$/tests/fixture_data/multi_page_1_jobs.html" />
         <option value="$PROJECT_DIR$/tests/fixture_data/fixture_data_acccess.py" />
         <option value="$PROJECT_DIR$/tests/test_page_parser/test_page_parser.py" />
-        <option value="$PROJECT_DIR$/tests/test_fixtures/fixture_data_acccess.py" />
         <option value="$PROJECT_DIR$/tests/test_fixtures/all_jobs_out.html" />
-        <option value="$PROJECT_DIR$/src/application/cwjobmatches.py" />
+        <option value="$PROJECT_DIR$/src/application/jobTagSection.html.py" />
+        <option value="$PROJECT_DIR$/src/application/jobTagSelection.html.py" />
+        <option value="$PROJECT_DIR$/tests/test_fixtures/scanned.html" />
         <option value="$PROJECT_DIR$/tests/test_application/test_cwjobmatches.py" />
+        <option value="$PROJECT_DIR$/src/application/jobTagSelection.py" />
+        <option value="$PROJECT_DIR$/tests/test_fixtures/job_from_job_iterator.html" />
+        <option value="$PROJECT_DIR$/src/application/hello.py" />
+        <option value="$PROJECT_DIR$/src/application/cwjobmatches.py" />
+        <option value="$PROJECT_DIR$/tests/test_fixtures/fixture_data_acccess.py" />
+        <option value="$PROJECT_DIR$/hello.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="218" />
-    <option name="y" value="23" />
+    <option name="x" value="63" />
+    <option name="y" value="31" />
     <option name="width" value="1236" />
     <option name="height" value="823" />
   </component>
@@ -134,6 +161,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,19 +189,12 @@
               <item name="python_job_parser" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_job_parser" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="test_application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_job_parser" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_job_parser" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="test_fixtures" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -181,15 +202,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/tests/fixture_data" />
       <recent name="$PROJECT_DIR$/src/junk from before" />
       <recent name="$PROJECT_DIR$/src/conversions" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -204,7 +227,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_cwjobmatches.test_loop">
+  <component name="RunManager" selected="Python.hello">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -254,6 +277,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="py.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="hello" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_job_parser" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/application" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hello.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -361,21 +405,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_cwjobmatches.TestP.test_num_of_jobs_from_url" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="python_job_parser" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/test_application" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_cwjobmatches.TestP.test_num_of_jobs_from_url&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest for test_cwjobmatches.test_all_jobs" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_job_parser" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -391,6 +420,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_cwjobmatches.test_file_content_from_url" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python_job_parser" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/test_application" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_cwjobmatches.test_file_content_from_url&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest for test_cwjobmatches.test_loop" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_job_parser" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -403,21 +447,6 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_cwjobmatches.test_loop&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_cwjobmatches.test_num_of_jobs_from_url" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="python_job_parser" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/test_application" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_cwjobmatches.test_num_of_jobs_from_url&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -443,18 +472,18 @@
       <item itemvalue="Python.partC" />
       <item itemvalue="Python tests.py.test in simple.py" />
       <item itemvalue="Python tests.pytest for test_cwjobmatches.test_all_jobs" />
-      <item itemvalue="Python tests.pytest for test_cwjobmatches.test_num_of_jobs_from_url" />
-      <item itemvalue="Python tests.pytest for test_cwjobmatches.TestP.test_num_of_jobs_from_url" />
       <item itemvalue="Python tests.pytest in test_cwjobmatches.py" />
       <item itemvalue="Python tests.pytest for test_cwjobmatches.test_loop" />
+      <item itemvalue="Python tests.pytest for test_cwjobmatches.test_file_content_from_url" />
+      <item itemvalue="Python.hello" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.hello" />
         <item itemvalue="Python tests.pytest for test_cwjobmatches.test_loop" />
+        <item itemvalue="Python tests.pytest for test_cwjobmatches.test_file_content_from_url" />
         <item itemvalue="Python tests.pytest in test_cwjobmatches.py" />
         <item itemvalue="Python tests.pytest for test_cwjobmatches.test_all_jobs" />
-        <item itemvalue="Python tests.pytest for test_cwjobmatches.TestP.test_num_of_jobs_from_url" />
-        <item itemvalue="Python tests.pytest for test_cwjobmatches.test_num_of_jobs_from_url" />
       </list>
     </recent_temporary>
   </component>
@@ -553,50 +582,58 @@
       <option name="project" value="LOCAL" />
       <updated>1545091334320</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added todo notes">
+      <created>1545123102439</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1545123102439</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_cwjobmatches_py - 2018.12.17 at 23h 42m 22s.xml">
-      <configuration name="pytest in test_cwjobmatches.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_cwjobmatches_py - 2018.12.17 at 23h 42m 57s.xml">
-      <configuration name="pytest in test_cwjobmatches.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_cwjobmatches_py - 2018.12.17 at 23h 43m 47s.xml">
-      <configuration name="pytest in test_cwjobmatches.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_cwjobmatches_py - 2018.12.17 at 23h 45m 59s.xml">
-      <configuration name="pytest in test_cwjobmatches.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_cwjobmatches_py - 2018.12.17 at 23h 56m 18s.xml">
-      <configuration name="pytest in test_cwjobmatches.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_cwjobmatches_py - 2018.12.18 at 00h 01m 23s.xml">
-      <configuration name="pytest in test_cwjobmatches.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_cwjobmatches_test_loop - 2018.12.18 at 00h 29m 28s.xml">
+    <history-entry file="pytest_for_test_cwjobmatches_test_loop - 2018.12.21 at 16h 30m 11s.xml">
       <configuration name="pytest for test_cwjobmatches.test_loop" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_cwjobmatches_test_loop - 2018.12.18 at 00h 30m 06s.xml">
+    <history-entry file="pytest_for_test_cwjobmatches_test_loop - 2018.12.21 at 16h 31m 08s.xml">
       <configuration name="pytest for test_cwjobmatches.test_loop" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_cwjobmatches_test_loop - 2018.12.18 at 00h 31m 32s.xml">
+    <history-entry file="pytest_for_test_cwjobmatches_test_loop - 2018.12.21 at 16h 32m 08s.xml">
       <configuration name="pytest for test_cwjobmatches.test_loop" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_cwjobmatches_test_loop - 2018.12.18 at 00h 31m 55s.xml">
+    <history-entry file="pytest_for_test_cwjobmatches_test_loop - 2018.12.21 at 16h 33m 14s.xml">
+      <configuration name="pytest for test_cwjobmatches.test_loop" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_cwjobmatches_test_loop - 2018.12.21 at 16h 34m 32s.xml">
+      <configuration name="pytest for test_cwjobmatches.test_loop" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_cwjobmatches_test_loop - 2018.12.21 at 16h 57m 39s.xml">
+      <configuration name="pytest for test_cwjobmatches.test_loop" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_cwjobmatches_test_loop - 2018.12.21 at 17h 03m 59s.xml">
+      <configuration name="pytest for test_cwjobmatches.test_loop" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_cwjobmatches_test_loop - 2018.12.21 at 17h 06m 47s.xml">
+      <configuration name="pytest for test_cwjobmatches.test_loop" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_cwjobmatches_test_loop - 2018.12.21 at 17h 10m 53s.xml">
+      <configuration name="pytest for test_cwjobmatches.test_loop" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_cwjobmatches_test_loop - 2018.12.21 at 17h 17m 15s.xml">
       <configuration name="pytest for test_cwjobmatches.test_loop" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="218" y="23" width="1236" height="823" extended-state="0" />
+    <frame x="63" y="31" width="1236" height="823" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49894738" visible="true" weight="0.34254608" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49894738" visible="true" weight="0.35427135" />
       <window_info id="Structure" order="1" weight="0.24958123" />
       <window_info id="Favorites" order="2" sideWeight="0.5010526" side_tool="true" weight="0.2839196" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32909605" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4924623" weight="0.28672317" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4924623" weight="0.33050847" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3983051" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -611,6 +648,27 @@
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" id="R Packages" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49894738" visible="true" weight="0.35427135" />
+      <window_info id="Structure" order="1" weight="0.24958123" />
+      <window_info id="Favorites" order="2" sideWeight="0.5010526" side_tool="true" weight="0.2839196" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32909605" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4924623" visible="true" weight="0.33050847" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3983051" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49832496" weight="0.32909605" />
+      <window_info anchor="bottom" id="Python Console" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50753766" side_tool="true" weight="0.34322035" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -633,7 +691,8 @@
     <MESSAGE value="noto sure its for the best but all results are BeutifulSoup tags, may need to tidy up still" />
     <MESSAGE value="refine BeautifulSoup tags for results" />
     <MESSAGE value="notably added parser: BeautifulSoup(out, 'html.parser')" />
-    <option name="LAST_COMMIT_MESSAGE" value="notably added parser: BeautifulSoup(out, 'html.parser')" />
+    <MESSAGE value="added todo notes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added todo notes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -697,9 +756,7 @@
     <entry file="file://$PROJECT_DIR$/src/simple.py" />
     <entry file="file://$PROJECT_DIR$/py.py" />
     <entry file="file://$PROJECT_DIR$/src/py.py" />
-    <entry file="file://$PROJECT_DIR$/tests/__init__.py" />
     <entry file="file://$PROJECT_DIR$/src/junk_from_before/partB.py" />
-    <entry file="file://$PROJECT_DIR$/src/__init__.py" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -765,10 +822,90 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_convert.py" />
+    <entry file="file://$PROJECT_DIR$/tests/test_fixtures/multi_page_1_jobs_output.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1417">
+          <caret column="25" selection-start-column="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_fixtures/all_jobs_out.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="2311" column="28" selection-start-line="2311" selection-start-column="28" selection-end-line="2311" selection-end-column="28" />
+          <folding>
+            <element signature="e#751#4818#0" />
+            <element signature="e#1289#1311#0" expanded="true" />
+            <element signature="e#4818#9314#0" />
+            <element signature="e#5307#5329#0" expanded="true" />
+            <element signature="e#9314#13131#0" />
+            <element signature="e#9772#9794#0" expanded="true" />
+            <element signature="e#13131#17363#0" />
+            <element signature="e#13627#13649#0" expanded="true" />
+            <element signature="e#17363#21438#0" />
+            <element signature="e#17847#17869#0" expanded="true" />
+            <element signature="e#20095#20100#0" expanded="true" />
+            <element signature="e#21438#25604#0" />
+            <element signature="e#21950#21972#0" expanded="true" />
+            <element signature="e#25604#29612#0" />
+            <element signature="e#26094#26116#0" expanded="true" />
+            <element signature="e#29612#33591#0" />
+            <element signature="e#30081#30103#0" expanded="true" />
+            <element signature="e#33591#37722#0" />
+            <element signature="e#34134#34156#0" expanded="true" />
+            <element signature="e#37722#42022#0" />
+            <element signature="e#38322#38344#0" expanded="true" />
+            <element signature="e#42022#46145#0" />
+            <element signature="e#42565#42587#0" expanded="true" />
+            <element signature="e#46145#50241#0" />
+            <element signature="e#46638#46660#0" expanded="true" />
+            <element signature="e#50241#54422#0" />
+            <element signature="e#50763#50785#0" expanded="true" />
+            <element signature="e#54422#58485#0" />
+            <element signature="e#54879#54901#0" expanded="true" />
+            <element signature="e#58485#62571#0" />
+            <element signature="e#58987#59009#0" expanded="true" />
+            <element signature="e#62571#66552#0" />
+            <element signature="e#63087#63109#0" expanded="true" />
+            <element signature="e#66552#70625#0" />
+            <element signature="e#66976#66998#0" expanded="true" />
+            <element signature="e#70625#74038#0" />
+            <element signature="e#71065#71087#0" expanded="true" />
+            <element signature="e#74038#77453#0" />
+            <element signature="e#74528#74550#0" expanded="true" />
+            <element signature="e#77453#80614#0" />
+            <element signature="e#77905#77927#0" expanded="true" />
+            <element signature="e#80614#84218#0" />
+            <element signature="e#81142#81164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_application/test_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" selection-start-line="37" selection-end-line="39" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_fixtures/scanned.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/jobTagSelection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="88" selection-start-line="9" selection-start-column="88" selection-end-line="9" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_fixtures/multi_page_1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="966" column="79" lean-forward="true" selection-start-line="966" selection-start-column="79" selection-end-line="966" selection-end-column="79" />
+        <state relative-caret-position="-1102">
+          <caret line="1739" column="89" selection-start-line="1739" selection-start-column="68" selection-end-line="1739" selection-end-column="89" />
           <folding>
             <element signature="e#5269#5275#1" expanded="true" />
             <element signature="n#div#7;n#div#2;n#div#0;n#div#0;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" />
@@ -906,95 +1043,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_fixtures/multi_page_1_jobs_output.html">
+    <entry file="file://$PROJECT_DIR$/tests/test_fixtures/job_from_job_iterator.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1417">
-          <caret column="25" selection-start-column="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_fixtures/all_jobs_out.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="2311" column="28" selection-start-line="2311" selection-start-column="28" selection-end-line="2311" selection-end-column="28" />
+        <state relative-caret-position="244">
+          <caret line="142" column="23" lean-forward="true" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="23" />
           <folding>
-            <element signature="e#751#4818#0" />
-            <element signature="e#1289#1311#0" expanded="true" />
-            <element signature="e#4818#9314#0" />
-            <element signature="e#5307#5329#0" expanded="true" />
-            <element signature="e#9314#13131#0" />
-            <element signature="e#9772#9794#0" expanded="true" />
-            <element signature="e#13131#17363#0" />
-            <element signature="e#13627#13649#0" expanded="true" />
-            <element signature="e#17363#21438#0" />
-            <element signature="e#17847#17869#0" expanded="true" />
-            <element signature="e#20095#20100#0" expanded="true" />
-            <element signature="e#21438#25604#0" />
-            <element signature="e#21950#21972#0" expanded="true" />
-            <element signature="e#25604#29612#0" />
-            <element signature="e#26094#26116#0" expanded="true" />
-            <element signature="e#29612#33591#0" />
-            <element signature="e#30081#30103#0" expanded="true" />
-            <element signature="e#33591#37722#0" />
-            <element signature="e#34134#34156#0" expanded="true" />
-            <element signature="e#37722#42022#0" />
-            <element signature="e#38322#38344#0" expanded="true" />
-            <element signature="e#42022#46145#0" />
-            <element signature="e#42565#42587#0" expanded="true" />
-            <element signature="e#46145#50241#0" />
-            <element signature="e#46638#46660#0" expanded="true" />
-            <element signature="e#50241#54422#0" />
-            <element signature="e#50763#50785#0" expanded="true" />
-            <element signature="e#54422#58485#0" />
-            <element signature="e#54879#54901#0" expanded="true" />
-            <element signature="e#58485#62571#0" />
-            <element signature="e#58987#59009#0" expanded="true" />
-            <element signature="e#62571#66552#0" />
-            <element signature="e#63087#63109#0" expanded="true" />
-            <element signature="e#66552#70625#0" />
-            <element signature="e#66976#66998#0" expanded="true" />
-            <element signature="e#70625#74038#0" />
-            <element signature="e#71065#71087#0" expanded="true" />
-            <element signature="e#74038#77453#0" />
-            <element signature="e#74528#74550#0" expanded="true" />
-            <element signature="e#77453#80614#0" />
-            <element signature="e#77905#77927#0" expanded="true" />
-            <element signature="e#80614#84218#0" />
-            <element signature="e#81142#81164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_application/test_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" selection-start-line="37" selection-end-line="39" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_fixtures/fixture_data_acccess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/cwjobmatches.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#2824#2829#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_application/test_cwjobmatches.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="15">
+          <caret line="1" column="61" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/cwjobmatches.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_fixtures/fixture_data_acccess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
-            <element signature="e#0#71#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>

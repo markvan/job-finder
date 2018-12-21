@@ -1,5 +1,7 @@
 import urllib.request
 from bs4 import BeautifulSoup
+from src.application.jobTagSelection import JobTagSelection
+
 
 #TODO new sponsored jobs may not have class "job new" check on these
 
@@ -43,5 +45,6 @@ class CWJobMatches:
         return BeautifulSoup(out, 'html.parser')
 
     def next_job(self, url):
-        for link in self.get_all_jobs(url).find_all('div', class_="job new "):
-            yield link
+        for job in self.get_all_jobs(url).find_all('div', class_="job new "):
+            job = JobTagSelection.select(job)
+            yield job

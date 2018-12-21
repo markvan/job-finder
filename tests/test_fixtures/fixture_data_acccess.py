@@ -10,7 +10,7 @@ def file_name_from_url(url):
         page_number_char = '1'
     else:
         page_number_char = url[-1:]
-    return files.get(page_number_char)
+    return files.get(page_number_char).replace('../.', "")
 
 
 # get the html from a file depending on page query

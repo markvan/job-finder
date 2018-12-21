@@ -1,8 +1,17 @@
 from tests.test_fixtures.fixture_data_acccess import file_name_from_url
 from tests.test_fixtures.fixture_data_acccess import page_source_from_file_name
 from src.application.cwjobmatches import CWJobMatches
+import pytest
 
 #TODO Introduce pytest.fixture
+@pytest.fixture
+def url():
+    return "https://www.cwjobs.co.uk/jobs/contract/innovation/in-london?postedwithin=1"
+
+@pytest.fixture
+def job_matcher():
+    return create_job_matcher()
+
 
 
 # test that the right file names will be used to read from in responce to url page  query
@@ -23,9 +32,9 @@ def create_job_matcher():
 # test that the CWJobMatches 'fetches from files' the right html for three urls
 # using CWJobMatches().get_html(self, url)
 # normally that instance method is called by instance method get_jobs_from_page(self, url)
-def test_file_content_from_url():
+def test_file_content_from_url(url):
     job_matcher = create_job_matcher()
-    url = "https://www.cwjobs.co.uk/jobs/contract/innovation/in-london?postedwithin=1"
+    # url = "https://www.cwjobs.co.uk/jobs/contract/innovation/in-london?postedwithin=1"
     assert '<!–– multi page 1 ––>' in job_matcher.get_html(url)
     url = "https://www.cwjobs.co.uk/jobs/contract/innovation/in-london?postedwithin=1&page=2"
     assert '<!–– multi page 2 ––>' in job_matcher.get_html(url)
@@ -70,6 +79,8 @@ def test_loop():
     count = 0
     for job in job_matcher.next_job(url):
         count += 1
+        print('<hr/>')
+        print(job)
     assert count == 17+4+0
 
 
