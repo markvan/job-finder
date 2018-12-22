@@ -1,6 +1,4 @@
-body {
-    width: 600px;
-}
+
 
 h2 {
     background-color: #a5ff97;
@@ -12,11 +10,23 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 10pt;
     color: #444;
-    width: 300px;
+    width: 400px;
     margin-left: 150px;
 }
 
 .job-description  {
     overflow: hidden;
     height: 250px;
+    padding-left: 50px;
+}
+
+.notes p {
+    margin: 0px;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
 }
