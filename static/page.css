@@ -13,5 +13,10 @@ body {
     font-size: 10pt;
     color: #444;
     width: 300px;
-    margin-left: 500px;
+    margin-left: 150px;
+}
+
+.job-description  {
+    overflow: hidden;
+    height: 250px;
 }
