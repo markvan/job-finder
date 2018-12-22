@@ -83,4 +83,8 @@ def test_loop():
         print(job)
     assert count == 17+4+0
 
+def test_get_page():
+    url = "https://www.cwjobs.co.uk/job/digital-business-analyst/lorien-resourcing-job84625719"
+    print(CWJobMatches().get_html2(url))
+
 
