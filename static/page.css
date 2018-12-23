@@ -1,4 +1,16 @@
+#page-wrap {
+    width: 600px;
+    margin: 15px auto;
+    position: relative;
+}
 
+#sidebar {
+    width: 50px;
+    position: fixed;
+    margin-left: 20px;
+    left: 10px;
+    top: 16px;
+}
 
 h2 {
     background-color: #a5ff97;
@@ -14,7 +26,7 @@ body {
     margin-left: 150px;
 }
 
-.job-description  {
+.job-description {
     overflow: hidden;
     height: 250px;
     padding-left: 50px;
@@ -25,8 +37,9 @@ body {
 }
 
 .alignleft {
-	float: left;
+    float: left;
 }
+
 .alignright {
-	float: right;
+    float: right;
 }

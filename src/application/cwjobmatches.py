@@ -1,6 +1,6 @@
 import urllib.request
 from bs4 import BeautifulSoup
-from src.application.jobTagSelection import JobTagSelection
+from src.application.jobFormatter import JobFormatter
 from src.application.cwjobspagegetter import CWJobsPageGetter
 
 import urllib.request
@@ -53,5 +53,5 @@ class CWJobMatches:
 
     def next_job(self, url):
         for job in self.get_all_jobs(url).find_all('div', class_="job new "):
-            job = JobTagSelection.select(job)
+            job = JobFormatter.select(job)
             yield job

@@ -2,25 +2,26 @@ from bs4 import BeautifulSoup
 from src.application.cwjobspagegetter  import CWJobsPageGetter
 
 
-class JobTagSelection:
+class JobFormatter:
     @staticmethod
     def select(job):
         # build the job div
         out = ""
-        if JobTagSelection.is_contract(job):
+        if JobFormatter.is_contract(job):
             out = "<div class='job'>"
-            out += JobTagSelection.heading(job)
+            out += JobFormatter.heading(job)
             out += '<div class="notes">'
             out += '<div class="textbox">'
-            out += '<p class="alignleft">' + JobTagSelection.salary(job) + '</p>'
-            out += '<p class="alignright">' + JobTagSelection.when(job) + '</p>'
+            out += '<p class="alignleft">' + JobFormatter.salary(job) + '</p>'
+            out += '<p class="alignright">' + JobFormatter.when(job) + '</p>'
             out += '</div><div style="clear: both;"></div>'
-            out += '<p>' + JobTagSelection.location(job) + '</p>'
+            out += '<p>' + JobFormatter.location(job) + '</p>'
             out += '</div>'
-            # out += '<p>&nbsp</p>'
-            out += str(JobTagSelection.job_description(job))
+            out += str(JobFormatter.job_description(job))
             out += "</div>"
             out = out.replace('...', "").replace('…',"").replace('  ', ' ').replace(" ", ' ')
+            #TODO messy clean up
+            out = out.replace('<br/><br/>', '<br/>').replace('<br/> <br/>', '<br/>').replace('<p><p/>', "")
         return out
 
     @staticmethod
