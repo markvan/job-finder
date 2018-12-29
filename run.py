@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 from src.application.cwjobmatches import CWJobMatches
 from src.application.cwjobspagegetter import CWJobsPageGetter
 from src.application.menu import Menu
@@ -17,22 +17,9 @@ def create_job_matcher(production):
 app = Flask(__name__)
 
 @app.route("/")
+@app.route('/')
 def hello():
-    url = "https://www.cwjobs.co.uk/jobs/contract/python/in-london?postedwithin=1"
-    production = True
-    job_matcher = create_job_matcher(production)
-    out = '''
-    <link rel="stylesheet" type="text/css" href="static/page.css">
-    <div id="page-wrap">
-    <div class="job-container">
-    '''
-    found_at_least_one_job = False
-    for job in job_matcher.next_job(url):
-        out +=  job
-        found_at_least_one_job = True
-    if not found_at_least_one_job:
-        out = 'No jobs at the moment'
-    return out + ' </div>' + Menu.generate() + '</div>'
+    return redirect('/find/cto', code=302)
 
 
 @app.route("/find/<term>")
@@ -50,7 +37,7 @@ def find(term):
         out +=  job
         found_at_least_one_job = True
     if not found_at_least_one_job:
-        out += '<h2>No jobs at the moment</h2>'
+        out += '<h2>No ' + term + ' jobs at the moment</h2>'
     return out + ' </div>' + Menu.generate() + '</div>'
 
 

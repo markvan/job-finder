@@ -5,11 +5,14 @@
 }
 
 #sidebar {
-    width: 50px;
     position: fixed;
     margin-left: 20px;
     left: 10px;
     top: 16px;
+    width: 80px;
+    padding-left: 10px;
+    background-color: #fbe7fb;
+    border-right-width: 10px;
 }
 
 h2 {
