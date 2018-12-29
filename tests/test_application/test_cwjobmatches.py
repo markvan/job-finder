@@ -13,7 +13,7 @@ def job_matcher():
     # monkeypatch to get file contents instead of live page source
     # from https://stackoverflow.com/questions/28127874/monkey-patching-python-an-instance-method
     job_matcher = CWJobMatches()
-    job_matcher.get_html = page_source_from_file_name.__get__(job_matcher, CWJobMatches)
+    job_matcher._get_html = page_source_from_file_name.__get__(job_matcher, CWJobMatches)
     return job_matcher
 
 
@@ -25,14 +25,14 @@ def test_file_names_from_url():
 
 
 # test that the CWJobMatches 'fetches from files' the right html for three urls
-# using CWJobMatches().get_html(self, url)
+# using CWJobMatches()._get_html(self, url)
 # normally that instance method is called by instance method get_jobs_from_page(self, url)
 def test_file_content_from_url(url, job_matcher):
-    assert '<!–– multi page 1 ––>' in job_matcher.get_html(url)
+    assert '<!–– multi page 1 ––>' in job_matcher._get_html(url)
     url = "https://www.cwjobs.co.uk/jobs/contract/innovation/in-london?postedwithin=1&page=2"
-    assert '<!–– multi page 2 ––>' in job_matcher.get_html(url)
+    assert '<!–– multi page 2 ––>' in job_matcher._get_html(url)
     url = "https://www.cwjobs.co.uk/jobs/contract/innovation/in-london?postedwithin=1&page=3"
-    assert '<!–– multi page 3 ––>' in job_matcher.get_html(url)
+    assert '<!–– multi page 3 ––>' in job_matcher._get_html(url)
 
 
 def _count_jobs(html_fragment):
@@ -57,7 +57,7 @@ def test_next_url(job_matcher):
 # could do with better test, only relying on counts
 def test_get_jobs_from_multiple_pages(url, job_matcher):
     # the three pages have 17, 4 and 0 jobs on them
-    assert _count_jobs(job_matcher.get_all_jobs(url)) == 17+4+0
+    assert _count_jobs(job_matcher._get_all_jobs(url)) == 17 + 4 + 0
 
 
 def test_job_matcher_iterator(url, job_matcher):

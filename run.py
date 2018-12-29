@@ -10,7 +10,7 @@ def create_job_matcher(production):
     if not production:
         # monkeypatch to get file contents instead of live page source
         # from https://stackoverflow.com/questions/28127874/monkey-patching-python-an-instance-method
-        job_matcher.get_html = page_source_from_file_name.__get__(job_matcher, CWJobMatches)
+        job_matcher._get_html = page_source_from_file_name.__get__(job_matcher, CWJobMatches)
     return job_matcher
 
 
