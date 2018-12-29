@@ -20,9 +20,6 @@ class CWJobMatches:
             page_source = u.read()
         return page_source
 
-    def get_html2(self, url):
-        return CWJobsPageGetter.get('https://www.cwjobs.co.uk/job/digital-business-analyst/lorien-resourcing-job84625719')
-
     # returns 0 to many jobs from a page at the url
     def get_jobs_from_page(self, url):
         soup = BeautifulSoup(self.get_html(url), 'html.parser')

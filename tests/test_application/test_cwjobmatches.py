@@ -68,13 +68,6 @@ def test_job_matcher_iterator(url, job_matcher):
         print(job)
     assert count == 17+4+0
 
-def test_get_page():
-    # relies on an active internet connection
-    url = "https://www.cwjobs.co.uk/job/digital-business-analyst/lorien-resourcing-job84625719"
-    result = CWJobMatches().get_html2(url).decode("utf-8")
-    component = '<title>Digital Business Analyst in London | Lorien Resourcing - CWJobs</title>'
-    assert(result.find(component) > -1)
-
 
 def test_db():
     print(' ')
