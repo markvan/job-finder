@@ -1,6 +1,6 @@
 import urllib.request
 from bs4 import BeautifulSoup
-from src.application.jobFormatter import JobFormatter
+from src.application.CWJobFormatter import CWJobFormatter
 from src.application.cwjobspagegetter import CWJobsPageGetter
 
 import urllib.request
@@ -28,7 +28,7 @@ class CWJobMatches:
             out += str(link)
         return BeautifulSoup(out, 'html.parser')
 
-    def _get_next_url(self, url):
+    def _make_next_url(self, url):
         if "&page=" in url:
             page = int(url[-1:])
             u = url[:-1]+str(page+1)
@@ -36,18 +36,20 @@ class CWJobMatches:
             u = url+"&page=2"
         return u
 
+    # extract all jobs from one or more search result pages
     def get_all_jobs(self, url):
-        last_count = -1
+        number_of_jobs_on_page = -1
         out = ""
         u = url
-        while last_count != 0:
+        while number_of_jobs_on_page != 0:
             jobs = str(self.get_jobs_from_page(u))
+            number_of_jobs_on_page = jobs.count('class="job new " id=')
             out += jobs
-            last_count = jobs.count('class="job new " id=')
-            u = self._get_next_url(u)
+            u = self._make_next_url(u)
         return BeautifulSoup(out, 'html.parser')
 
+    # allow iteration over jobs for a search url
     def next_job(self, url):
         for job in self.get_all_jobs(url).find_all('div', class_="job new "):
-            job = JobFormatter.select(job)
+            job = CWJobFormatter.format(job)
             yield job

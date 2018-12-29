@@ -26,8 +26,12 @@ def hello():
     <div id="page-wrap">
     <div class="job-container">
     '''
+    found_at_least_one_job = False
     for job in job_matcher.next_job(url):
         out +=  job
+        found_at_least_one_job = True
+    if not found_at_least_one_job:
+        out = 'No jobs at the moment'
     return out + ' </div>' + Menu.generate() + '</div>'
 
 
@@ -41,8 +45,12 @@ def find(term):
     <div id="page-wrap">
     <div class="job-container">
     '''
+    found_at_least_one_job = False
     for job in job_matcher.next_job(url):
-        out += job
+        out +=  job
+        found_at_least_one_job = True
+    if not found_at_least_one_job:
+        out += '<h2>No jobs at the moment</h2>'
     return out + ' </div>' + Menu.generate() + '</div>'
 
 

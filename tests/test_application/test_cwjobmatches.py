@@ -48,10 +48,10 @@ def test_num_of_jobs_from_url(url, job_matcher):
 
 def test_next_url(job_matcher):
     u1 = 'https://x.com/something'
-    assert u1+'&page=2' == job_matcher._get_next_url(u1)
-    assert u1+'&page=3' == job_matcher._get_next_url(job_matcher._get_next_url(u1))
+    assert u1+'&page=2' == job_matcher._make_next_url(u1)
+    assert u1+'&page=3' == job_matcher._make_next_url(job_matcher._make_next_url(u1))
     u2 = 'https://x.com/something&page=200'
-    assert 'https://x.com/something&page=201' == job_matcher._get_next_url(u2)
+    assert 'https://x.com/something&page=201' == job_matcher._make_next_url(u2)
 
 
 # could do with better test, only relying on counts

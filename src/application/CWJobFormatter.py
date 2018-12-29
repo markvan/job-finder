@@ -2,22 +2,22 @@ from bs4 import BeautifulSoup
 from src.application.cwjobspagegetter import CWJobsPageGetter
 
 
-class JobFormatter:
+class CWJobFormatter:
     @staticmethod
-    def select(job):
+    def format(job):
         # build the job div
         out = ""
-        if JobFormatter.is_contract(job):
+        if CWJobFormatter.is_contract(job):
             out = "<div class='job'>"
-            out += JobFormatter.heading(job)
+            out += CWJobFormatter.heading(job)
             out += '<div class="notes">'
             out += '<div class="textbox">'
-            out += '<p class="alignleft">' + JobFormatter.salary(job) + '</p>'
-            out += '<p class="alignright">' + JobFormatter.when(job) + '</p>'
+            out += '<p class="alignleft">' + CWJobFormatter.salary(job) + '</p>'
+            out += '<p class="alignright">' + CWJobFormatter.date_posted(job) + '</p>'
             out += '</div><div style="clear: both;"></div>'
-            out += '<p>' + JobFormatter.location(job) + '</p>'
+            out += '<p>' + CWJobFormatter.location(job) + '</p>'
             out += '</div>'
-            out += str(JobFormatter.job_description(job))
+            out += str(CWJobFormatter.description(job))
             out += "</div>"
             out = out.replace('...', "").replace('…',"").replace('  ', ' ').replace(" ", ' ')
             #TODO messy clean up
@@ -34,7 +34,7 @@ class JobFormatter:
 
 
     @staticmethod
-    def job_description(job):
+    def description(job):
         # fid the url for the job
         url = job.find('div', class_='job-title').find('a')['href']
         # get the job page html
@@ -58,6 +58,6 @@ class JobFormatter:
         return out.replace('from', "").replace('- Update', "").replace('Update', "")
 
     @staticmethod
-    def when(job):
+    def date_posted(job):
         return str(job.find('li', class_='date-posted').text)
 
