@@ -2,6 +2,7 @@ from tests.test_fixtures.fixture_data_acccess import file_name_from_url
 from tests.test_fixtures.fixture_data_acccess import page_source_from_file_name
 from src.application.cwjobmatches import CWJobMatches
 import pytest
+import psycopg2
 
 #TODO Introduce pytest.fixture
 @pytest.fixture
@@ -86,5 +87,28 @@ def test_loop():
 def test_get_page():
     url = "https://www.cwjobs.co.uk/job/digital-business-analyst/lorien-resourcing-job84625719"
     print(CWJobMatches().get_html2(url))
+
+
+def test_db():
+    print(' ')
+    print('-----------------------------------------')
+    try:
+        conn = psycopg2.connect("dbname=postgres")
+        print(str(conn))
+        cur = conn.cursor()
+        print(str(cur))
+        # display the PostgreSQL database server version
+        cur.execute('SELECT version()')
+        print('PostgreSQL database version:')
+        cur.execute("SELECT title, url FROM jobs")
+        result = cur.fetchone()
+        print(result)
+    except (Exception, psycopg2.DatabaseError) as error:
+        print(error)
+    finally:
+        if conn is not None:
+            conn.close()
+            print('Database connection closed.')
+    print('-----------------------------------------')
 
 
