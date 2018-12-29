@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-from src.application.cwjobspagegetter  import CWJobsPageGetter
+from src.application.cwjobspagegetter import CWJobsPageGetter
 
 
 class JobFormatter:

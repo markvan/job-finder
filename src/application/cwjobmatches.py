@@ -4,7 +4,6 @@ from src.application.jobFormatter import JobFormatter
 from src.application.cwjobspagegetter import CWJobsPageGetter
 
 import urllib.request
-import os
 
 
 #TODO new sponsored jobs may not have class "job new" check on these
