@@ -41,7 +41,7 @@ class CWJobFormatter:
         job_page = CWJobsPageGetter.get(url)
         soup = BeautifulSoup(job_page, 'html.parser')
         # return the job description
-        return soup.find('div', class_='job-description-cwjobs')
+        return soup.find('div', class_='job-description')
 
     # remaining methods just get info from the job description in the search results
     @staticmethod

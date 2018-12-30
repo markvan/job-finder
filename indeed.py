@@ -24,7 +24,7 @@ def hello():
 
 @app.route("/find/<term>")
 def find(term):
-    url = 'https://www.indeed.co.uk/jobs?as_and=innovation&as_phr=&as_any=&as_not=&as_ttl=&as_cmp=&jt=contract&st=&as_src=&salary=&radius=10&l=london&fromage=3&limit=500&sort=date&psf=advsrch'
+    url = 'https://www.indeed.co.uk/jobs?as_and=&as_phr=&as_any=&as_not=&as_ttl=' + term + '&as_cmp=&jt=contract&st=&as_src=&salary=&radius=10&l=london&fromage=3&limit=500&sort=date&psf=advsrch'
     production = True
     job_matcher = create_job_matcher(production)
     out = '''

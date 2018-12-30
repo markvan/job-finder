@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e71d542-fb88-45ee-a7a7-dc523a114162" name="Default" comment="refactored names in cwjobmatches, and therefore usages">
-      <change afterPath="$PROJECT_DIR$/indeed.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/indeedjobformatter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/indeedjobmatches.py" afterDir="false" />
+    <list default="true" id="3e71d542-fb88-45ee-a7a7-dc523a114162" name="Default" comment="been working on indeed job formatting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/CWJobFormatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/cwjobformatter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/cwjobmatches.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/cwjobmatches.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indeed.py" beforeDir="false" afterPath="$PROJECT_DIR$/indeed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/cwjobformatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/cwjobformatter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/indeedjobformatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/indeedjobformatter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/page.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/page.css" afterDir="false" />
     </list>
     <ignored path="untitled.iws" />
@@ -19,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/python_job_parser$indeed.coverage" NAME="indeed Coverage Results" MODIFIED="1546128452379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_job_parser$indeed.coverage" NAME="indeed Coverage Results" MODIFIED="1546171508733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_job_parser$pytest_in_test_cwjobmatches_py.coverage" NAME="pytest in test_cwjobmatches.py Coverage Results" MODIFIED="1546114702503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/test_application" />
     <SUITE FILE_PATH="coverage/python_job_parser$pytest_for_test_cwjobmatches_test_db.coverage" NAME="pytest for test_cwjobmatches.test_db Coverage Results" MODIFIED="1546077413577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/test_application" />
     <SUITE FILE_PATH="coverage/python_job_parser$pytest_for_test_cwjobmatches_test_file_content_from_url.coverage" NAME="pytest for test_cwjobmatches.test_file_content_from_url Coverage Results" MODIFIED="1546087337110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/test_application" />
@@ -30,7 +28,7 @@
     <SUITE FILE_PATH="coverage/python_job_parser$hello.coverage" NAME="hello Coverage Results" MODIFIED="1546086666524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/application" />
     <SUITE FILE_PATH="coverage/python_job_parser$pytest_for_test_cwjobmatches_test_get_jobs_from_multiple_pages.coverage" NAME="pytest for test_cwjobmatches.test_get_jobs_from_multiple_pages Coverage Results" MODIFIED="1546087755738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/test_application" />
     <SUITE FILE_PATH="coverage/python_job_parser$pytest_for_test_cwjobmatches_test_loop.coverage" NAME="pytest for test_cwjobmatches.test_loop Coverage Results" MODIFIED="1546087427341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/test_application" />
-    <SUITE FILE_PATH="coverage/python_job_parser$run.coverage" NAME="run Coverage Results" MODIFIED="1546095871813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_job_parser$run.coverage" NAME="run Coverage Results" MODIFIED="1546173428561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_job_parser$pytest_for_test_cwjobmatches_test_job_matcher_iteration.coverage" NAME="pytest for test_cwjobmatches.test_job_matcher_iteration Coverage Results" MODIFIED="1546087821140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/test_application" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -117,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/cwjobformatter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="43" column="55" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="55" />
+            <state relative-caret-position="543">
+              <caret line="43" column="55" lean-forward="true" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -129,38 +127,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/page.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/indeedjobmatches.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="9" column="73" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
-              <folding>
-                <element signature="e#0#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/bs4/element.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2959">
-              <caret line="913" column="13" selection-start-line="913" selection-start-column="13" selection-end-line="913" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/indeedjobformatter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+            <state relative-caret-position="310">
+              <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -168,17 +136,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/temp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/misc_data.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="165" lean-forward="true" selection-start-column="165" selection-end-column="165" />
+            <state relative-caret-position="340">
+              <caret line="1152" column="7" selection-start-line="1152" selection-start-column="7" selection-end-line="1152" selection-end-column="7" />
+              <folding>
+                <element signature="e#6083#6089#1" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#32749#32755#0" expanded="true" />
+                <element signature="e#32912#32918#0" expanded="true" />
+                <element signature="e#38321#38328#1" expanded="true" />
+                <element signature="e#39987#39994#1" expanded="true" />
+                <element signature="e#48679#48684#0" expanded="true" />
+                <element signature="e#52340#52345#0" expanded="true" />
+                <element signature="e#66471#66477#1" expanded="true" />
+                <element signature="e#66888#66894#0" expanded="true" />
+                <element signature="e#66954#66960#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -200,10 +172,18 @@
       <find>premium</find>
       <find>print</find>
       <find>last_count</find>
+      <find>contract</find>
+      <find>location</find>
+      <find>salary</find>
       <find>CWJobFormatter</find>
+      <find>== None</find>
+      <find>date</find>
+      <find>\n</find>
+      <find>job-description-cwjobs</find>
     </findStrings>
     <replaceStrings>
       <replace>number_of_jobs_on_page</replace>
+      <replace>is None</replace>
       <replace>IndeedJobFormatter</replace>
     </replaceStrings>
   </component>
@@ -258,18 +238,18 @@
         <option value="$PROJECT_DIR$/static/misc_data.txt" />
         <option value="$PROJECT_DIR$/src/application/CWJobFormatter.py" />
         <option value="$PROJECT_DIR$/src/application/cwjobmatches.py" />
-        <option value="$PROJECT_DIR$/indeed.py" />
-        <option value="$PROJECT_DIR$/src/application/temp.html" />
         <option value="$PROJECT_DIR$/src/application/indeedjobmatches.py" />
         <option value="$PROJECT_DIR$/src/application/indeedjobformatter.py" />
+        <option value="$PROJECT_DIR$/indeed.py" />
+        <option value="$PROJECT_DIR$/src/application/temp.html" />
         <option value="$PROJECT_DIR$/src/application/cwjobformatter.py" />
         <option value="$PROJECT_DIR$/static/page.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="165" />
-    <option name="y" value="80" />
+    <option name="x" value="231" />
+    <option name="y" value="23" />
     <option name="width" value="1236" />
     <option name="height" value="877" />
   </component>
@@ -301,28 +281,6 @@
               <item name="python_job_parser" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_job_parser" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_job_parser" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_job_parser" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_job_parser" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_job_parser" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_job_parser" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_job_parser" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="test_application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_job_parser" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_job_parser" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="test_fixtures" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -365,7 +323,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.indeed">
+  <component name="RunManager" selected="Python.run">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -626,18 +584,18 @@
       <item itemvalue="Python.py.py" />
       <item itemvalue="Python.partB" />
       <item itemvalue="Python.partC" />
+      <item itemvalue="Python.run" />
+      <item itemvalue="Python.indeed" />
       <item itemvalue="Python tests.py.test in simple.py" />
       <item itemvalue="Python tests.pytest in test_cwjobmatches.py" />
       <item itemvalue="Python tests.pytest for test_cwjobmatches.test_job_matcher_iteration" />
       <item itemvalue="Python tests.pytest for test_cwjobmatches.test_get_page" />
-      <item itemvalue="Python.run" />
-      <item itemvalue="Python.indeed" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run" />
         <item itemvalue="Python.indeed" />
         <item itemvalue="Python tests.pytest in test_cwjobmatches.py" />
-        <item itemvalue="Python.run" />
         <item itemvalue="Python tests.pytest for test_cwjobmatches.test_get_page" />
         <item itemvalue="Python tests.pytest for test_cwjobmatches.test_job_matcher_iteration" />
       </list>
@@ -655,7 +613,7 @@
       <updated>1459021716740</updated>
       <workItem from="1545430602229" duration="259000" />
       <workItem from="1545430931919" duration="4253000" />
-      <workItem from="1545822107141" duration="20505000" />
+      <workItem from="1545822107141" duration="28372000" />
     </task>
     <task id="LOCAL-00001" summary="created some raw hrm result pages for fixtures, starting to create page parser class">
       <created>1544994813073</created>
@@ -839,7 +797,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546114842738</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="been working on indeed job formatting">
+      <created>1546128809880</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1546128809880</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -875,18 +840,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38405000" />
+    <option name="totallyTimeSpent" value="46272000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="276" y="427" width="1236" height="877" extended-state="0" />
+    <frame x="231" y="23" width="1236" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49894738" visible="true" weight="0.37772194" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49894738" visible="true" weight="0.37772194" />
       <window_info id="Structure" order="1" weight="0.24958123" />
       <window_info id="Favorites" order="2" sideWeight="0.5010526" side_tool="true" weight="0.2839196" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32909605" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" visible="true" weight="0.328084" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.328084" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4916248" weight="0.35433072" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39763778" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
@@ -945,7 +910,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="mocking sucessfully in test page parser see punctuation chars at the beginning of the output" />
     <MESSAGE value="more on monkeypatching /mocking" />
     <MESSAGE value="I believe that I've got mocking going to replace http requests, now to build something that returns all jobs across related pages" />
     <MESSAGE value="Now testing that correct no of jobs are returned for page contents at url" />
@@ -970,7 +934,8 @@
     <MESSAGE value="page layout and informational no jobs message with search term added to it" />
     <MESSAGE value="added initial underscores to method names in CWJobFormatter" />
     <MESSAGE value="refactored names in cwjobmatches, and therefore usages" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored names in cwjobmatches, and therefore usages" />
+    <MESSAGE value="been working on indeed job formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="been working on indeed job formatting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -981,9 +946,9 @@
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/application/indeedjobformatter.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="21" />
+          <url>file://$PROJECT_DIR$/src/application/cwjobformatter.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -998,47 +963,47 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>job.find('span', class_='summary').text</expression-string>
+        <expression-string>soup.find('div', class_='job-description-cwjobs')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>job.find('span', class_='summary')</expression-string>
+        <expression-string>u.read()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>job.find('span', class_='summary').contents[0]</expression-string>
+        <expression-string>url</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>str(a_tag.contents[0])</expression-string>
+        <expression-string>description.__len__()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>a_tag.contents[0]</expression-string>
+        <expression-string>description.__len__</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>a_tag.contents</expression-string>
+        <expression-string>description</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>out</expression-string>
+        <expression-string>description.length</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>BeautifulSoup(out, 'html.parser')</expression-string>
+        <expression-string>description.len</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>interim.find_all('div', class_=&quot;result&quot;)</expression-string>
+        <expression-string>description.length()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -1345,13 +1310,6 @@
     <entry file="file://$PROJECT_DIR$/tests/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="2291" selection-start-line="2291" selection-end-line="2291" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1393,36 +1351,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/menu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="62" lean-forward="true" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_application/test_cwjobmatches.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
           <folding>
             <element signature="e#0#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/cwjobspagegetter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/indeed.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1444,10 +1378,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/temp.html">
+    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="140">
+          <caret line="1798" selection-start-line="1798" selection-end-line="1798" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/cwjobspagegetter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/menu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="22" selection-end-line="17" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1460,25 +1408,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/indeedjobmatches.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="9" column="73" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/indeedjobformatter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+        <state relative-caret-position="341">
+          <caret line="37" column="53" lean-forward="true" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/indeed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="26" column="92" selection-start-line="26" selection-start-column="92" selection-end-line="26" selection-end-column="92" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/temp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="1152" column="7" selection-start-line="1152" selection-start-column="7" selection-end-line="1152" selection-end-column="7" />
+          <folding>
+            <element signature="e#6083#6089#1" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#32749#32755#0" expanded="true" />
+            <element signature="e#32912#32918#0" expanded="true" />
+            <element signature="e#38321#38328#1" expanded="true" />
+            <element signature="e#39987#39994#1" expanded="true" />
+            <element signature="e#48679#48684#0" expanded="true" />
+            <element signature="e#52340#52345#0" expanded="true" />
+            <element signature="e#66471#66477#1" expanded="true" />
+            <element signature="e#66888#66894#0" expanded="true" />
+            <element signature="e#66954#66960#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/cwjobformatter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="43" column="55" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="55" />
+        <state relative-caret-position="543">
+          <caret line="43" column="55" lean-forward="true" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
@@ -1487,8 +1465,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/page.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        <state relative-caret-position="310">
+          <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
         </state>
       </provider>
     </entry>
