@@ -29,9 +29,15 @@ body {
     margin-left: 150px;
 }
 
-.job-description {
+.job-description-cwjobs {
     overflow: hidden;
     height: 250px;
+    padding-left: 50px;
+}
+
+.job-description-indeed {
+    overflow: hidden;
+    height: 50px;
     padding-left: 50px;
 }
 

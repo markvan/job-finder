@@ -1,14 +1,14 @@
-from src.application.cwjobformatter import CWJobFormatter
+from src.application.indeedjobformatter import IndeedJobFormatter
 import urllib.request
 from bs4 import BeautifulSoup
 
 
-class CWJobMatches:
+class IndeedJobMatches:
 
     # allow iteration over jobs for a search url
     def next_job(self, url):
-        for job in self._get_all_jobs(url).find_all('div', class_="job new "):
-            formatted_job = CWJobFormatter.format(job)
+        for job in self._get_all_jobs(url).find_all('div', class_="result"):
+            formatted_job = IndeedJobFormatter.format(job)
             yield formatted_job
 
     # extract all jobs from one or more search result pages
@@ -17,17 +17,18 @@ class CWJobMatches:
         out = ""
         u = url
         while number_of_jobs_on_page != 0:
-            jobs = str(self.get_jobs_from_page(u))
-            number_of_jobs_on_page = jobs.count('class="job new " id=')
+            jobs = str(self._get_jobs_from_page(u))
+            number_of_jobs_on_page = 0  # jobs.count('class="job new " id=')
             out += jobs
-            u = self._make_next_url(u)
+            # u = self._make_next_url(u)
         return BeautifulSoup(out, 'html.parser')
 
     # returns 0 to many jobs from a page at the url
-    def get_jobs_from_page(self, url):
+    def _get_jobs_from_page(self, url):
         soup = BeautifulSoup(self._get_html(url), 'html.parser')
         out = ""
-        for link in soup.find('div', class_="job-results").find_all('div', class_="job new "):
+        interim = soup.find('td', {"id": "resultsCol" })
+        for link in interim.find_all('div', class_="result"):
             out += str(link)
         return BeautifulSoup(out, 'html.parser')
         # get page source at the url

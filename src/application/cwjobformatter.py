@@ -32,8 +32,6 @@ class CWJobFormatter:
         out = out.replace('<span class="label label-featured">Premium</span>', "")
         return out
 
-
-
     # this finds the job description from the page at the url in the search results
     @staticmethod
     def _description(job):
@@ -43,7 +41,7 @@ class CWJobFormatter:
         job_page = CWJobsPageGetter.get(url)
         soup = BeautifulSoup(job_page, 'html.parser')
         # return the job description
-        return soup.find('div', class_='job-description')
+        return soup.find('div', class_='job-description-cwjobs')
 
     # remaining methods just get info from the job description in the search results
     @staticmethod
