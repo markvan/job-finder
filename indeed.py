@@ -16,7 +16,6 @@ def create_job_matcher(production):
 
 app = Flask(__name__)
 
-@app.route("/")
 @app.route('/')
 def hello():
     return redirect('/find/cto', code=302)

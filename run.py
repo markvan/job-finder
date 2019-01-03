@@ -33,9 +33,12 @@ def find(term):
     <div class="job-container">
     '''
     found_at_least_one_job = False
+    count = 0
     for job in job_matcher.next_job(url):
-        out +=  job
+        out += job
         found_at_least_one_job = True
+        count += 1
+        print(str(count) + ' ')
     if not found_at_least_one_job:
         out += '<h2>No ' + term + ' jobs at the moment</h2>'
     return out + ' </div>' + Menu.generate() + '</div>'
